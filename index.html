@@ -1,74 +1,219 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <script type="text/javascript" src="jQuery-2.1.1.js"></script>
+        <script type="text/javascript" src="Main.js"></script>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Philwelsh.github.io : Phil Welsh - Website">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <title></title>
+    </head>
+<body>
+    <div class="overlay widthfull height-1000 pos-fix top"></div>
+    <div class="bg back-darkgray speckled">
+        <div class="sidemargins margin-lr-20 overflow-hide">
+            <div class="topmenu shadow heightfull centerdiv pad-topbot-20 chunk">
+                <ul class="pos-rel">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="portfolio">Portfolio</a></li>
+                    <li>
+                        <a class="logo" href="#">
+                            <img class="logo1" style="height:150px; width:150px;" src="img/logo2-B4.png" />
+                            <img class="logo2 pos-abs left bottom" style="height:150px; width:150px;" src="img/logo2-H2.png" />
+                        </a>
+                    </li>
+                    <li><a href="#" id="about">About</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clearfix textcenter stripe shadow pos-rel margin-top-10 pad-top-20 overflow-hide chunk page homeEle">
+                <div class="text page">
+                    <p>Hello, my name is </p>
+                    <h1 class="nomargin"><span>Philip Welsh</span></h1>
+                    <p>and this is my journey as a web developer</p>
+                </div>
+                <div class="canvas widthfull">
+                    <canvas class="floatleft page" id="canvas" width="160" height="180"></canvas>
+                </div>
+                <div class="margin-per-3 portexamples page">
+                    <div class="center">
+                        <nav class="porteg">
+                            <img src="img/alt.jpg" />
+                            <a class="pic" href=""></a>
+                            <input type="checkbox" class="morebutton" id="check1">
+                            <a href="#" class="morebutton"></a>
+                            <div class="porttext width-300 height-20">
+                                <h5>Andrew Robson</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </nav>
+                        <nav class="porteg">
+                            <img src="img/alt.jpg" />
+                            <a class="pic" href=""></a>
+                            <input type="checkbox" class="morebutton" id="check2">
+                            <a href="#" class="morebutton"></a>
+                            <div class="porttext width-300 height-20">
+                                <h5>Andrew Robson</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </nav>
+                        <nav class="porteg">
+                            <img src="img/alt.jpg" />
+                            <a class="pic" href=""></a>
+                            <input type="checkbox" class="morebutton checkbox" id="check3">
+                            <a href="#" class="morebutton"></a>
+                            <div class="porttext width-300 height-20">
+                                <h5>Andrew Robson</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </nav>
+                        <nav class="porteg">
+                            <img src="img/alt.jpg" />
+                            <a class="pic" href=""></a>
+                            <input type="checkbox" class="morebutton" id="check4">
+                            <a href="#" class="morebutton"></a>
+                            <div class="porttext width-300 height-20">
+                                <h5>Andrew Robson</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="contactstripe page back-white height-400">
+                <div class="card back-white margin-20">
+                    <p>whatever i don't care</p>
+                    <h4>contact info</h4>
+                </div>
+            </div>
+            <div class="clearfix shadow segment seg1 heightfull margin-topbot-10 pad-bot-40 chunk page homeEle">
+                <div class="section1 intro margin-top-40 pad-bot-40">
+                    <div class="half1 widthhalf floatleft">
+                        <div class="text margin-lr-50 effect2">
+                            <div class=" box1 orig">
+                                <h2>Who I am.</h2>
+                                <br />
+                                <h4>
+                                    I am a web developer classically trained in art and digital media,
+                                    working hard to develop into a full time developer.
+                                </h4>
+                            </div>
+                            <div class=" box1 alt">
+                                <h2>A bit about me</h2>
+                                <br />
+                                <h4>
+                                    Hello, thanks for making it this far. This section is here to tell you a little more about myself
+                                    <br />
+                                    I have always been interested in art, and went to study Creative Digital Media in Teesside University,
+                                    from there i developed different skills and widened my net of study, it was only recently that i was pointed
+                                    towards the possibility of web development. After studying for a few months i learned a lot and am ready to advance
+                                    further into this realm, combining my artistic diversity and new software knowledge i hope to break through to this industry
+                                    and create some fun designs for the web.
+                                </h4>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+                                <!--Born and raised in Newcastle, i was always passionate about art and animation,
+                                I worked hard and got into Teesside University, where i met many people with similar interests.
+                                I became quite close to programmers at this point but was still dedicated to learning arts,
+                                <br />
+                                When i left university, i decided this was the best time to explore the world. I left to teach english in China
+                                where i stayed for the next few years, learning about the culture and language, but also continuing my studies in digital media.
+                                <br />
+                                Upon returning to England i went to many networking events and talked to many companies about becoming a games artist,
+                                however the opportunities were limited. I began noticing many jobs in software development, but wasn't sure if it was right for me
+                                <br />
+                                As an 'extra skill' i decided to study it alongside digital media. I began to understand it more and became very interested in it
+                                learning new technologies and learning about the future of this industry. It was now that i decided to dedicate myself to this
+                                form of media, using my artistic skills to compliment my newfound knowledge of Web development.
+                                <br />
+                                I have aspirations of using my skills to make advanced and intriguing websites, while learning more complex languages and
+                                studying further into back-end development.-->
 
-    <title>Philwelsh.github.io</title>
-  </head>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half2 widthhalf floatright">
+                        <div class="text margin-right-50 effect2">
+                            <div class="box1 orig">
+                                <h2>What i do.</h2>
+                                <br />
+                                <h4>
+                                    Design, Develop, Produce. Most of my time i spend right now is reverse engineering websites and
+                                    challenging myself to learn new techniques.
+                                </h4>
+                            </div>
+                            <div class="box1 alt">
+                                <img class="picwidth block margin" src="img/logo2-B2.png" />
+                                <h4>Skills</h4>
+                                <h4>HTML5,CSS3</h4>
+                                <h4>Javascript,JQuery</h4>
+                                <h4>Photoshop,Illustrator</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="clearfix shadow segment seg2 heightfull margin-topbot-10 chunk page homeEle">
+                <div class="clearfix segment heightfull chunk">
+                    <div class="section1 heightfull margin-top-40 pad-bot-40">
+                        <div class="margin-lr-50 heightfull pos-rel">
+                            <div class="box1 info">
+                                <h2>Why?</h2>
+                                <div class="quart">
+                                    <h5>
+                                        Artistic-<br />
+                                    </h5><h4>Creative and stylish designs</h4>
 
-  <body>
+                                </div>
+                                <div class="vertical right">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="quart">
+                                    <h5>
+                                        Modern-<br />
+                                    </h5><h4>Using modern techniques. HTML5, CSS3 and JQuery with cross-browser compatibility</h4>
+                                </div>
+                                <div class="vertical right">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="quart">
+                                    <h5>
+                                        Adaptive-<br />
+                                    </h5><h4>Responsive design, following a mobile first attitude.</h4>
+                                </div>
+                                <div class="vertical right">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="quart">
+                                    <h5>
+                                        Bespoke-<br />
+                                    </h5><h4>Uniquely created content, tailored to suit you</h4>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/PhilWelsh">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div class="footer chunk height-50 pos-rel">
+            <h3 class="floatleft">NoCopyright<i>@</i>PhilWelsh2014</h3>
+            <ul>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="#">Email</a>
+                </li>
 
-          <h1 id="project_title">Philwelsh.github.io</h1>
-          <h2 id="project_tagline">Phil Welsh - Website</h2>
-
-        </header>
+            </ul>
+        </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>

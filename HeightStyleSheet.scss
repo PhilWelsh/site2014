@@ -1,0 +1,292 @@
+﻿.widthfull {width:100%;} 
+.widthhalf {width:50%;}
+.heightfull{height:100%;}
+.sizefull{width:100%;height:100%;}
+.nomargin{margin:0;}
+.h-inherit{height:inherit;}
+
+.right{right:0}
+.left{left:0}
+.bottom{bottom:0}
+.top{top:0}
+
+.thirds{width:33%;}
+.thirds:nth-child(2){width:34%;}
+
+   @for $i from 1 through 100 {
+      .height-#{$i} {
+          height:1px * $i;
+      }
+}
+
+   @for $i from 2 through 10 {
+      .height-#{$i}00 {
+          height:100px * $i;
+      }
+}
+
+    @for $i from 1 through 10 {
+      .height-em-#{$i} {
+          height:1em * $i;
+      }
+}
+
+    @for $i from 1 through 99 {
+      .height-per-#{$i} {
+          height:1% * $i;
+      }
+}
+
+        @for $i from 1 through 10 {
+      .line-height-em-#{$i} {
+          line-height:1em * $i;
+      }
+}
+
+
+        @for $i from 1 through 100 {
+      .line-height-#{$i} {
+          line-height:1px * $i;
+      }
+}
+
+        @for $i from 1 through 10 {
+        .pad-em-#{$i/2} {
+            padding:0.5em * $i;
+        } 
+}
+
+        @for $i from 1 through 100 {
+        .pad-topbot-#{$i} {
+            padding-top:1px * $i;
+            padding-bottom:1px * $i;
+        } 
+}
+
+        @for $i from 1 through 40 {
+        .pad-topbot-per-#{$i} {
+            padding-top:1% * $i;
+            padding-bottom:1% * $i;
+        } 
+}
+
+        @for $i from 1 through 100 {
+        .pad-top-#{$i} {
+            padding-top:1px * $i;
+        } 
+}
+
+        @for $i from 1 through 100 {
+        .pad-bot-#{$i} {
+            padding-bottom:1px * $i;
+        } 
+}
+
+        @for $i from 1 through 100{
+            .pad-leftright-#{$i}{
+            padding-left:1px * $i;
+            padding-right:1px * $i;
+        }
+}
+
+        @for $i from 1 through 40{
+            .pad-leftright-per-#{$i}{
+            padding-left:1% * $i;
+            padding-right:1% * $i;
+        }
+}
+
+        @for $i from 1 through 100 {
+        .pad-right-#{$i} {
+            padding-right:1px * $i;
+        } 
+}
+
+        @for $i from 1 through 100 {
+        .pad-left-#{$i} {
+            padding-left:1px * $i;
+        } 
+
+}
+    @for $i from 1 through 100 {
+      .width-#{$i} {
+          width:1px * $i;
+      }
+}
+
+    @for $i from 1 through 100 {
+      .width-per-#{$i} {
+          width:1% * $i;
+      }
+}
+
+    @for $i from 2 through 10 {
+      .width-#{$i}00 {
+          width:100px * $i;
+      }
+}
+
+    @for $i from 1 through 100 {
+      .max-width-per-#{$i} {
+          max-width:1% * $i;
+      }
+}
+
+        @for $i from 1 through 10 {
+        .font-size-#{$i} {
+            font-size:1em * $i;
+        } 
+}
+
+    .margin{
+        margin-top:auto;
+        margin-right:auto;
+        margin-bottom:auto;
+        margin-left:auto;
+    }
+
+        @for $i from 1 through 50{
+            .margin-per-#{$i}{
+            margin:1% * $i;
+        }
+}
+
+        @for $i from 1 through 50{
+            .margin-lr-per-#{$i}{
+            margin-left:1% * $i;
+            margin-right:1% * $i;
+        }
+}
+        @for $i from 1 through 100{
+            .margin-lr-#{$i}{
+            margin-left:1px * $i;
+            margin-right:1px * $i;
+        }
+}
+
+       @for $i from 1 through 100{
+            .margin-left-#{$i}{
+            margin-left:1px * $i;
+        }
+}
+
+       @for $i from 1 through 50{
+            .margin-right-#{$i}{
+            margin-right:1px * $i;
+        }
+}
+
+       @for $i from 1 through 50{
+            .margin-left-per-#{$i}{
+            margin-left:1% * $i;
+        }
+}
+
+       @for $i from 1 through 50{
+            .margin-right-per-#{$i}{
+            margin-right:1% * $i;
+        }
+}
+
+        @for $i from 0 through 100{
+            .margin-topbot-#{$i}{
+            margin-top:1px * $i;
+            margin-bottom:1px * $i;
+        }
+}
+
+        @for $i from 0 through 50{
+            .margin-topbot-per-#{$i}{
+            margin-top:1% * $i;
+            margin-bottom:1% * $i;
+        }
+}
+
+        @for $i from 0 through 5{
+            .margin-topbot-em-#{$i}{
+            margin-top:1em * $i;
+            margin-bottom:1em * $i;
+        }
+}
+
+        @for $i from 0 through 50{
+            .margin-top-#{$i}{
+            margin-top:1px * $i;
+        }
+}
+
+        @for $i from 0 through 50{
+            .margin-top-per-#{$i}{
+            margin-top:1% * $i;
+        }
+}
+
+        @for $i from 0 through 50{
+            .margin-bottom-per-#{$i}{
+            margin-bottom:1% * $i;
+        }
+}
+
+        @for $i from 0 through 50{
+            .margin-bottom-#{$i}{
+            margin-bottom:1px * $i;
+        }
+}
+
+
+        @for $i from 1 through 100{
+            .top-#{$i}{
+            top:1px * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .bot-#{$i}{
+            bottom:1px * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .left-#{$i}{
+            left:1px * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .right-#{$i}{
+            right:1px * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .top-per-#{$i}{
+            top:1% * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .bot-per-#{$i}{
+            bottom:1% * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .left-per-#{$i}{
+            left:1% * $i;
+        }
+}
+
+        @for $i from 1 through 100{
+            .right-per-#{$i}{
+            right:1% * $i;
+        }
+}
+
+
+    /*
+
+        .height-rel-50%{
+            height:width/2;
+        }
+
+        */
