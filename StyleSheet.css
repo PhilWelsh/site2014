@@ -10,9 +10,6 @@
 .page {
   transition: all 1s ease-in-out; }
 
-p {
-  transition: all 1s ease-in-out; }
-
 .add {
   transition-delay: 1s; }
 
@@ -22,12 +19,21 @@ p {
 .seg2.kill {
   display: none; }
 
+.stripe .text {
+  display: none; }
+
+.homeEle.stripe .text {
+  display: block; }
+
+.homEle.portexamples {
+  display: none; }
+
 .portexamples {
   opacity: 0;
   display: none; }
 
 .porteg {
-  margin: 20px 20px;
+  margin: 15px 1%;
   position: relative;
   display: inline-block; }
   .porteg img {
@@ -61,7 +67,8 @@ p {
       text-transform: initial; }
   .porteg .checkbox {
     z-index: 5;
-    opacity: 0; }
+    opacity: 0;
+    cursor: pointer; }
   .porteg .checkbox:checked ~ div {
     height: 80px;
     max-height: 100%;
@@ -75,21 +82,24 @@ p {
     width: 20px;
     height: 20px; }
 
-.portfolioEle.stripe {
+.portEle.stripe {
   background-color: #555763;
   min-height: 100%; }
-  .portfolioEle.stripe .text, .portfolioEle.stripe #canvas {
+  .portEle.stripe .text, .portEle.stripe #canvas {
     opacity: 0; }
+  .portEle.stripe .portexamples {
+    display: block; }
 
-.portfolioEle.stripe.add .portexamples {
-  opacity: 1; }
-
-.portfolioEle.stripe.kill .text, .portfolioEle.stripe.kill #canvas {
-  display: none; }
-.portfolioEle.stripe.kill .portexamples {
+.portEle.remove.stripe .portexamples {
   display: block; }
 
-.box1.orig {
+.portEle.add.stripe .portexamples {
+  opacity: 1; }
+
+.portEle.add.stripe #canvas {
+  display: none; }
+
+.born .kill .fadein .fadeout .box1.orig {
   display: block; }
 
 .box1.alt {
@@ -115,8 +125,7 @@ p {
   transform: translateX(0%); }
 
 .contactstripe {
-  transform: translateX(100%);
-  display: none; }
+  transform: translateX(100%); }
 
 .contactEle.stripe {
   transform: translateX(-100%); }
@@ -130,17 +139,19 @@ p {
 .contactEle.stripe.add ~ .contactstripe {
   transform: translateX(0%); }
 
+.contactstripe.remove {
+  transform: translateX(100%); }
+
+.contactstripe.kill {
+  transform: translateX(100%);
+  display: none !important; }
+
 .contactEle.seg1, .contactEle.seg2 {
   opacity: 0; }
 
-.portfolioEle.seg1, .portfolioEle.seg2 {
-  display: none; }
-
-.aboutEle.seg2 {
-  display: none; }
-
-.contactEle.seg2 {
-  display: none; }
+.contactstripe.remove {
+  display: block;
+  transform: translateX(100%); }
 
 .highlighted {
   color: #7979a2 !important;
@@ -149,8 +160,8 @@ p {
     -webkit-filter: drop-shadow(0px 3px 3px #777) !important;
     -webkit-filter: hue-rotate(-155deg) !important; }
 
-.slideoff {
-  transform: translateX(-200%); }
+p {
+  transition: all 1s ease-in-out; }
 
 .chunk {
   border-radius: 2px; }
@@ -175,7 +186,7 @@ body {
     font-size: 0.8em; }
   body h1, body h2, body h3, body h5 {
     font-family: "chomp";
-    text-shadow: 0px 5px 4px rgba(150, 150, 150, 0.9); }
+    text-shadow: 0 5px 4px rgba(150, 150, 150, 0.9); }
   body h4 {
     margin: 5px 0; }
   body h1 {
@@ -190,10 +201,8 @@ body {
     text-transform: uppercase; }
   body a, body a:visited, body a:hover, body a:active {
     text-decoration: none;
-    color: inherit; }
-  body label {
-    cursor: pointer; }
-  body a {
+    color: inherit;
+    cursor: pointer;
     transition: all 0.25s ease-in-out; }
 
 .overlay {
@@ -255,7 +264,7 @@ body {
 .stripe.homeEle .canvas {
   transform: translateX(0%); }
 
-.stripe.portfolioEle .canvas {
+.stripe.portEle .canvas {
   transform: translateX(0%); }
 
 .stripe.aboutEle .canvas {
@@ -358,6 +367,7 @@ body {
 .footer {
   border-radius: 4px; }
   .footer h3 {
+    cursor: default;
     position: absolute;
     bottom: 0;
     margin: 5px;
@@ -454,6 +464,8 @@ body {
     bottom: 10px;
     left: -13px;
     background-repeat: no-repeat; }
+  .topmenu a b {
+    font-weight: normal; }
 .topmenu #home:before {
   background-image: url(img/home.png); }
 .topmenu #about:before {
@@ -462,5 +474,118 @@ body {
   background-image: url(img/portfolio.png); }
 .topmenu #contact:before {
   background-image: url(img/contact.png); }
+
+@media only screen and (max-width: 1460px) {
+  .porteg {
+    margin: 15px 4%; } }
+
+@media only screen and (max-width: 1330px) {
+  .porteg {
+    margin: 15px 3%; } }
+
+@media only screen and (max-width: 1235px) {
+  .porteg {
+    margin: 15px 7%; } }
+
+@media only screen and (max-width: 1050px) {
+  .quart {
+    padding: 20px 5%;
+    width: 37%; }
+  .vertical.right.second {
+    display: none; }
+  .vertical.right {
+    width: 3%; }
+  .porteg {
+    margin: 15px 5%; }
+  .box1 {
+    min-width: 150px; }
+    .box1 h2 {
+      font-size: 3rem; }
+      .box1 h2:after {
+        top: 80px;
+        width: 45px;
+        height: 7px; }
+  .aboutEle.add .section1 .half1 {
+    width: 60% !important;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .aboutEle.add .section1 .half2 .box1.alt.second {
+    width: 210px;
+    position: absolute;
+    right: 0; } }
+
+@media only screen and (max-width: 860px) {
+  .porteg {
+    margin: 15px 2%; } }
+
+@media only screen and (max-width: 750px) {
+  .topmenu {
+    padding-bottom: 80px; }
+  .topmenu li:not(:nth-of-type(3)) {
+    position: relative; }
+  .topmenu li {
+    margin: 0 2%;
+    font-size: 1rem;
+    bottom: -70px;
+    left: 50px; }
+  .topmenu b {
+    opacity: 0;
+    transition: all 0.5s ease-in-out; }
+  .topmenu a:hover b {
+    opacity: 1; }
+  .topmenu a:before {
+    background-size: 70px 70px;
+    width: 70px !important;
+    height: 70px !important;
+    bottom: 0;
+    left: -5px !important; }
+  .topmenu .logoli {
+    position: absolute;
+    left: 0; }
+  .topmenu img {
+    width: 80px !important;
+    height: 80px !important; }
+  .stripe {
+    height: 50%; }
+  .half1, .half2 {
+    width: 100%;
+    margin-bottom: 50px; }
+  .text {
+    margin: 0 40px; }
+  .box1 h2 {
+    font-size: 2rem; }
+    .box1 h2:after {
+      top: 60px; }
+  .aboutEle.add .section1 .half1 {
+    width: 80% !important;
+    float: none; }
+    .aboutEle.add .section1 .half1 .text {
+      min-width: 85%;
+      margin-right: 2%;
+      margin-left: 2%; }
+  .aboutEle.add .section1 .half2 {
+    float: none;
+    width: 40%;
+    margin: auto; }
+  .aboutEle.add .section1 .box1.alt.second {
+    position: initial !important; } }
+
+@media only screen and (max-width: 525px) {
+  .footer h3, .footer a {
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 450px) {
+  .footer h3 {
+    position: relative;
+    top: -5px; }
+  ul {
+    margin: 0 5px; } }
+
+@media only screen and (max-width: 400px) {
+  .porteg img {
+    width: 100%;
+    height: 50%; }
+  .porteg .porttext {
+    width: 100%; } }
 
 /*# sourceMappingURL=StyleSheet.css.map */
