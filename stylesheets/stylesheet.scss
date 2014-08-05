@@ -146,7 +146,7 @@ p{transition:$slow;}
    //GENERAL RULES
 
   //WEBSITE START
-  .overlay{background-image: url(img/vintage-speckles4.png);background-size: 30% 30%;}
+  .overlay{background-image: url(../img/vintage-speckles4.png);background-size: 30% 30%;}
   .background{background-color:$lightestprimary;}
   .topmenu{background-color:$lightestprimary;color:$darkprimary;}
   .stripe{background-color:rgba(255, 171, 1, 0.80); color:$lightestprimary}
@@ -182,7 +182,7 @@ p{transition:$slow;}
           margin:0;
           &:after{
             background: $darkprimary;
-            background: url(img/testhr.png);
+            background: url(../img/testhr.png);
             content: "";
             height: 10px;
             left: 20px;

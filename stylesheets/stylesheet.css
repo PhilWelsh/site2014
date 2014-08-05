@@ -10135,7 +10135,7 @@ body {
     transition: all 0.25s ease-in-out; }
 
 .overlay {
-  background-image: url(img/vintage-speckles4.png);
+  background-image: url(../img/vintage-speckles4.png);
   background-size: 30% 30%; }
 
 .background {
@@ -10206,7 +10206,7 @@ body {
   margin: 0; }
   .segment h2:after {
     background: #c6802e;
-    background: url(img/testhr.png);
+    background: url(../img/testhr.png);
     content: "";
     height: 10px;
     left: 20px;
