@@ -1,10 +1,10 @@
 ﻿
 //IMPORTS
 
-  @import url("HeightStyleSheet.css");
-  @import url("OperandsStyleSheet.css");
-  @import url("DecorStyleSheet.css");
-  @import url("FontsStyleSheet.css");
+  @import "HeightStyleSheet";
+  @import "OperandsStyleSheet";
+  @import "DecorStyleSheet";
+  @import "FontsStyleSheet";
 
   //IMPORTS
 /*  $darkestprimary:#a96e26;
@@ -363,10 +363,10 @@ box-shadow: 0 0 8px black;}
     background-repeat: no-repeat
         } b{font-weight:normal;}
  }
-    #home:before{background-image:url(img/home.png)}
-    #about:before{background-image:url(img/about.png);}
-    #portfolio:before{background-image:url(img/portfolio.png);}
-    #contact:before{background-image:url(img/contact.png);}
+    #home:before{background-image:url(../img/home.png)}
+    #about:before{background-image:url(../img/about.png);}
+    #portfolio:before{background-image:url(../img/portfolio.png);}
+    #contact:before{background-image:url(../img/contact.png);}
 }
 
 @media only screen and (max-width: 1460px){.porteg{margin:15px 4%;}}
