@@ -1,11 +1,11 @@
 ﻿@font-face {
 	font-family: Seshat;
-	src: url('font/Seshat.otf') format('opentype');
+	src: url(../font/Seshat.otf) format('opentype');
 }
 
 @font-face {
 	font-family: Chomp;
-	src: url('font/Chomp.ttf') format('truetype');
+	src: url(../font/Chomp.ttf) format('truetype');
 }
 
 body {
@@ -18,10 +18,10 @@ body {
 
 @font-face {
   font-family: chomp;
-  src:url('font/28 days later.ttf')  format('truetype');}
+  src:url(../font/28dayslater.ttf)  format('truetype');}
 @font-face {
   font-family: seshat;
-  src:url('font/seshat.ttf')  format('opentype');}
+  src:url(../font/Seshat.otf)  format('opentype');}
 
 .font-cursive{
 font-family: "Brush Script MT", cursive;
