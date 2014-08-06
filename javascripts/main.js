@@ -145,7 +145,7 @@ $(function () {
     var home = document.getElementById("home");
     var portfolio = document.getElementById("portfolio");
     var about = document.getElementById("about");
-    var contact = document.getElementById("contact");
+    var contact = document.getElementsByClassName("contact");
 
     var highlight = function (selected) {
         $(selected).on('click', function () {
