@@ -118,7 +118,8 @@
   .contactstripe.remove{display:block;transform:translateX(100%);}
 
 
-  .card{margin:20px auto;
+  .card{margin:120px auto;
+        border-radius:3px;
         border: 1px solid white;
 box-shadow: 0px 9px 19px 5px #323232;
 /*unlikely*/   //     background-color: #86651C;
@@ -224,7 +225,8 @@ p{transition:$slow;}
       }
 
   .canvas{transition:all 8s ease-in-out;}
-  .stripe{min-height:100%; #canvas{height:122px;}}
+  .stripe{min-height:100%; min-height:430px; #canvas{height:122px;}}
+  .stripe.homeEle{height:430px!important;}
 
   .stripe.homeEle .canvas{transform:translateX(0%);}
   .stripe.portEle .canvas{transform:translateX(0%);}
@@ -431,7 +433,7 @@ box-shadow: 0 0 8px black;}
     .vertical.right.second{display:none;}
     .vertical.right{width:3%;}
 
-    .porteg{margin:15px 5%;}
+    .porteg{margin:15px 5%;transition:$faster;}
     .box1{min-width:150px; h2{font-size:3rem;
              &:after{top: 80px; width: 45px;height:7px;}
                             }
