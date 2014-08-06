@@ -220,6 +220,7 @@ $(function () {
     }
 
     var removeContact = function () {
+        $(cstripe).removeClass("infoslide");
         $(cstripe).addClass("remove");
         $(stripe).removeClass("add");
         $(seg2).removeClass("add");
@@ -328,14 +329,16 @@ $(function () {
             $(seg1).addClass("kill");
             $(seg2).addClass("kill");
         }, 1000);
-
+        
         setTimeout(function () {
             $(stripe).addClass("add");
             $(seg1).addClass("add");
             $(seg2).addClass("add");
         }, 1100);
         $(cstripe).removeClass("remove");
-        
+        setTimeout(function () {
+        $(cstripe).addClass("infoslide");
+    }, 1100);
     });
 
 });

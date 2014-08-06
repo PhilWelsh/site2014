@@ -10260,6 +10260,16 @@ hr.sexy_line {
   display: block;
   transform: translateX(100%); }
 
+.contactEle ~ .contactstripe.infoslide .writing .hold .email ~ span {
+  left: 0;
+  transition: all 0.5s ease-in-out 1s; }
+.contactEle ~ .contactstripe.infoslide .writing .hold .linkedin ~ span {
+  left: 0;
+  transition: all 0.5s ease-in-out 1.25s; }
+.contactEle ~ .contactstripe.infoslide .writing .hold .phone ~ span {
+  left: 0;
+  transition: all 0.5s ease-in-out 1.5s; }
+
 .card {
   margin: 120px auto;
   border-radius: 3px;
@@ -10309,12 +10319,6 @@ hr.sexy_line {
       opacity: 0; }
     .card .hold a:hover:after {
       opacity: 0.15; }
-    .card .hold a:hover ~ span {
-      left: 0;
-      transition: all 0.5s ease-in-out 0s; }
-    .card .hold span:hover {
-      left: 0;
-      transition: all 0.5s ease-in-out 0s; }
     .card .hold a:hover {
       color: #282a5a; }
     .card .hold span {

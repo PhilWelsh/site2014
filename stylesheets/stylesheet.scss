@@ -117,7 +117,11 @@
 
   .contactstripe.remove{display:block;transform:translateX(100%);}
 
-
+.contactEle ~.contactstripe.infoslide .writing .hold{
+    .email ~span{left:0;transition:$fast 1s;}
+    .linkedin ~span{left:0;transition:$fast 1.25s;}
+    .phone ~span{left:0;transition:$fast 1.5s;}
+}
   .card{margin:120px auto;
         border-radius:3px;
         border: 1px solid white;
@@ -145,7 +149,7 @@ box-shadow: 0px 9px 19px 5px #323232;
                 a:hover:after{opacity:.15;}
                 
               
-              a:hover ~span{left:0; transition:$fast 0s;} span:hover{left:0; transition:$fast 0s;}
+             // a:hover ~span{left:0; transition:$fast 0s;} span:hover{left:0; transition:$fast 0s;}
                 a:hover{color: rgb(40, 42, 90);
                         
                 }
