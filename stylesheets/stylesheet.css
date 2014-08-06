@@ -1,5 +1,4 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
-.widthfull {
+﻿.widthfull {
   width: 100%; }
 
 .widthhalf {
@@ -10000,14 +9999,6 @@ using top/right etc. with absolute px, is this ok?!
   height: 200px;
   border-radius: 50%; }
 
-@font-face {
-  font-family: Seshat;
-  src: url(../font/Seshat.otf) format('opentype'); }
-
-@font-face {
-  font-family: Chomp;
-  src: url(../font/Chomp.ttf) format('truetype'); }
-
 .font-yanone {
   font-family: 'Yanone Kaffeesatz', sans-serif; }
 
@@ -10019,73 +10010,6 @@ using top/right etc. with absolute px, is this ok?!
   font-family: seshat;
   src: url(../font/Seshat.otf) format('opentype'); }
 
-.font-cursive {
-  font-family: "Brush Script MT", cursive; }
-
-.underline {
-  text-decoration: underline; }
-
-.sidelines-double {
-  line-height: 0.5;
-  text-align: center; }
-  .sidelines-double span {
-    display: inline-block;
-    position: relative; }
-  .sidelines-double span:before, .sidelines-double span:after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    top: 0;
-    width: 600px; }
-  .sidelines-double span:before {
-    right: 100%;
-    margin-right: 15px; }
-  .sidelines-double span:after {
-    left: 100%;
-    margin-left: 15px; }
-
-.sidelines {
-  line-height: 0.5;
-  text-align: center; }
-  .sidelines span {
-    display: inline-block;
-    position: relative; }
-  .sidelines span:before, .sidelines span:after {
-    content: "";
-    position: absolute;
-    height: 0.25em;
-    border-bottom: 1px solid white;
-    top: 0px;
-    width: 600px; }
-  .sidelines span:before {
-    right: 100%;
-    margin-right: 15px; }
-  .sidelines span:after {
-    left: 100%;
-    margin-left: 15px; }
-
-hr.style-eight {
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center; }
-
-hr.sexy_line {
-  display: block;
-  border: none;
-  color: white;
-  height: 1px;
-  background: black;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff)); }
-
-/*  $darkestprimary:#a96e26;
-  $darkprimary:#e08820;
-  $primary:#d68f00;
-  $lightprimary:#fbd66f;
-  $lightestprimary:#faebc2;*/
 .page {
   transition: all 1s ease-in-out; }
 

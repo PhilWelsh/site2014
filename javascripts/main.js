@@ -1,14 +1,3 @@
-function debounce(fn, delay) {
-    var timer = null;
-    return function () {
-        var context = this, args = arguments;
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-            fn.apply(context, args);
-        }, delay);
-    };
-}
-
 $(function () {
     console.log("hi there");
 
@@ -168,11 +157,6 @@ $(function () {
     highlight(contact);
 
     var homeElement = document.getElementsByClassName("homeElement");
-
-
-    var hideHome = function () {
-
-    }
     var cstripe = document.getElementsByClassName("contactstripe");
     var stripe = document.getElementsByClassName("stripe");
     var seg1 = document.getElementsByClassName("seg1");

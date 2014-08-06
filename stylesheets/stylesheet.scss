@@ -4,16 +4,19 @@
   @import "HeightStyleSheet";
   @import "OperandsStyleSheet";
   @import "DecorStyleSheet";
-  @import "FontsStyleSheet";
+  
+  //FONTS
+.font-yanone{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
-  //IMPORTS
-/*  $darkestprimary:#a96e26;
-  $darkprimary:#e08820;
-  $primary:#d68f00;
-  $lightprimary:#fbd66f;
-  $lightestprimary:#faebc2;*/
+@font-face {
+  font-family: chomp;
+  src:url(../font/28dayslater.ttf)  format('truetype');}
+@font-face {
+  font-family: seshat;
+  src:url(../font/Seshat.otf)  format('opentype');}
   //MIXINS
-  $full:100%;
 
   $darkestprimary:#a96e26;
   $darkprimary:#c6802e;
