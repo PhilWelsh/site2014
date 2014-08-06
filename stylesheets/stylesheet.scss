@@ -39,8 +39,7 @@
 
   //JS ADDED CLASSES//
   .page{transition:$slow;}
-  
-  .add{transition-delay:1s;}
+
   .seg1.kill{display:none;}
   .seg2.kill{display:none;}
 
@@ -77,14 +76,16 @@
   .portEle.add.stripe .portexamples{opacity:1;}
   .portEle.add.stripe #canvas{display:none;}
 
-  .born
+  /*.born
   .kill
   .fadein
-  .fadeout
+  .fadeout*/
                                    
 
 
   //ABOUT
+  .portEle.aboutEle.stripe .text{display:none;}
+  .aboutEle.stripe .text{display:block;}
   .box1.orig{display:block;}
   .box1.alt{display:none;}
   .picwidth{width:150px;}
@@ -95,9 +96,18 @@
 
   }
   //CONTACT
-  .stripe{transform:translateX(0%);}
+  .toContact.stripe ~.contactstripe{display:none;} .toContact.stripe{display:block;}
+  .slideright.contactstripe{transform:translateX(100%);display:block!important;}
+
+  .aboutEle.stripe{display:block;transform:translateX(-100%);}
+  .aboutEle.stripe.add{display:block;transform:translateX(00%);}
+
+
+  .stripe{transform:translateX(0%);} 
+  .stripe.nomove{transform:translate(0%)!important;}
   .contactstripe{transform:translateX(100%);}
   .contactEle.stripe{transform:translateX(-100%);}
+
  
   .contactEle.stripe.kill{display:none; ~.contactstripe{display:block;transform:translateX(100%)}}
   .contactEle.stripe.add ~.contactstripe{transform:translateX(0%);}

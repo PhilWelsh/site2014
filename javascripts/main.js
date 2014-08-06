@@ -236,9 +236,14 @@ $(function () {
             $(seg2).removeClass("contactEle");
             $(cstripe).addClass("kill");
         }, 1000);
+
     }
     //HOME
     $(home).on('click', function () {
+        if ($(stripe).hasClass("contactEle")) { } else { $(stripe).addClass("nomove") }
+
+        $(stripe).removeClass("toContact");
+      
         removeAbout();
         removePortfolio();
         removeContact();
@@ -248,10 +253,16 @@ $(function () {
             $(seg1).removeClass("kill");
             $(seg2).removeClass("kill");
         }, 1100);
+        
+        
     });
 
     //PORTFOLIO
     $(portfolio).on('click', function () {
+        if ($(stripe).hasClass("contactEle")) { } else { $(stripe).addClass("nomove") }
+
+        $(stripe).removeClass("toContact");
+        $(stripe).addClass("fromContact");
         removeHome();
         removeAbout();
         removeContact();
@@ -270,11 +281,18 @@ $(function () {
             $(seg2).addClass("add");
         }, 1100);
     });
-
+    
     //ABOUT
+
     $(about).on('click', function () {
-        removePortfolio();
+        if ($(stripe).hasClass("contactEle")) { } else { $(stripe).addClass("nomove") }
+
+        $(stripe).removeClass("toContact");
+        if($(stripe).hasClass("portEle")){
+            removePortfolio();}else{}
         removeContact();
+
+        setTimeout(function () {
         $(stripe).removeClass("kill");
         $(stripe).addClass("aboutEle");
         $(seg1).addClass("aboutEle");
@@ -285,14 +303,19 @@ $(function () {
         }, 1000);
 
         setTimeout(function () {
+
             $(stripe).addClass("add");
             $(seg1).addClass("add");
             $(seg2).addClass("add");
-        }, 1000);
+        }, 600);
+
+        }, 900);
     });
 
     //CONTACT
     $(contact).on('click', function () {
+        $(stripe).removeClass("nomove");
+        $(stripe).addClass("toContact");
         removePortfolio();
         removeAbout();
         $(cstripe).removeClass("kill");
@@ -312,7 +335,7 @@ $(function () {
             $(seg2).addClass("add");
         }, 1100);
         $(cstripe).removeClass("remove");
-
+        
     });
 
 });

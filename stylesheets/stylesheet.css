@@ -9939,9 +9939,6 @@ hr.sexy_line {
 .page {
   transition: all 1s ease-in-out; }
 
-.add {
-  transition-delay: 1s; }
-
 .seg1.kill {
   display: none; }
 
@@ -10028,7 +10025,17 @@ hr.sexy_line {
 .portEle.add.stripe #canvas {
   display: none; }
 
-.born .kill .fadein .fadeout .box1.orig {
+/*.born
+  .kill
+  .fadein
+  .fadeout*/
+.portEle.aboutEle.stripe .text {
+  display: none; }
+
+.aboutEle.stripe .text {
+  display: block; }
+
+.box1.orig {
   display: block; }
 
 .box1.alt {
@@ -10050,8 +10057,29 @@ hr.sexy_line {
 .aboutEle.add .half2 {
   width: 30%; }
 
+.toContact.stripe ~ .contactstripe {
+  display: none; }
+
+.toContact.stripe {
+  display: block; }
+
+.slideright.contactstripe {
+  transform: translateX(100%);
+  display: block !important; }
+
+.aboutEle.stripe {
+  display: block;
+  transform: translateX(-100%); }
+
+.aboutEle.stripe.add {
+  display: block;
+  transform: translateX(0%); }
+
 .stripe {
   transform: translateX(0%); }
+
+.stripe.nomove {
+  transform: translate(0%) !important; }
 
 .contactstripe {
   transform: translateX(100%); }
