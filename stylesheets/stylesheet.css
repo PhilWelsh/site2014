@@ -10013,24 +10013,22 @@ using top/right etc. with absolute px, is this ok?!
 .page {
   transition: all 1s ease-in-out; }
 
-.seg1.kill {
+.seg1 {
   display: none; }
 
-.seg2.kill {
+.seg2 {
   display: none; }
 
-.stripe .text {
-  display: none; }
-
-.homeEle.stripe .text {
+.seg1.homeEle, .seg2.homeEle, .seg1.aboutEle {
   display: block; }
 
-.homEle.portexamples {
-  display: none; }
+.stripe .text, .stripe #canvas {
+  display: none;
+  opacity: 0; }
 
-.portexamples {
-  opacity: 0;
-  display: none; }
+.homeEle.stripe .text, .homeEle.stripe #canvas {
+  display: block;
+  opacity: 1; }
 
 .porteg {
   margin: 15px 1%;
@@ -10082,28 +10080,24 @@ using top/right etc. with absolute px, is this ok?!
     width: 20px;
     height: 20px; }
 
-.portEle.stripe {
-  background-color: #555763;
+.portexamples {
+  opacity: 0;
+  display: none; }
+
+.portfade {
+  background-color: #555763 !important;
   min-height: 100%; }
-  .portEle.stripe .text, .portEle.stripe #canvas {
+  .portfade .text, .portfade #canvas {
     opacity: 0; }
-  .portEle.stripe .portexamples {
-    display: block; }
+  .portfade .portexamples {
+    opacity: 1; }
 
-.portEle.remove.stripe .portexamples {
+.portEle .portexamples {
   display: block; }
 
-.portEle.add.stripe .portexamples {
+.aboutEle.stripe .text, .aboutEle.stripe #canvas {
+  display: block;
   opacity: 1; }
-
-.portEle.add.stripe #canvas {
-  display: none; }
-
-.portEle.aboutEle.stripe .text {
-  display: none; }
-
-.aboutEle.stripe .text {
-  display: block; }
 
 .box1.orig {
   display: block; }
@@ -10114,18 +10108,19 @@ using top/right etc. with absolute px, is this ok?!
 .picwidth {
   width: 150px; }
 
-.aboutEle.add > .text {
-  transform: translateY(-90px); }
-.aboutEle.add p {
-  opacity: 0; }
-.aboutEle.add .box1.orig {
+.aboutEle .box1.orig {
   display: none; }
-.aboutEle.add .box1.alt {
+.aboutEle .box1.alt {
   display: block; }
-.aboutEle.add .half1 {
+.aboutEle .half1 {
   width: 70%; }
-.aboutEle.add .half2 {
+.aboutEle .half2 {
   width: 30%; }
+
+.aboutfade > .text {
+  transform: translateY(-90px); }
+.aboutfade p {
+  opacity: 0; }
 
 #stripecontainer {
   transition: all 1s ease-in-out;
@@ -10342,9 +10337,6 @@ body {
 
 .stripe.aboutEle .canvas {
   transform: translateX(45%); }
-
-.stripe.contactEle .canvas {
-  transform: translateX(0%); }
 
 .segment h2 {
   margin: 0; }

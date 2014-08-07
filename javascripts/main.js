@@ -156,220 +156,71 @@ $(function () {
     highlight(about);
     highlight(contact);
 
- //   var homeElement = document.getElementsByClassName("homeElement");
-    var cstripe = document.getElementsByClassName("contactstripe");
+    var container = document.getElementById("stripecontainer");
     var stripe = document.getElementsByClassName("stripe");
     var seg1 = document.getElementsByClassName("seg1");
     var seg2 = document.getElementsByClassName("seg2");
-    var container = document.getElementById("stripecontainer");
+
 
     $(home).on('click', function () {
         $(container).removeClass("slideleft");
     });
 
     var pageOut = function (page) {
-        $(stripe).removeClass(page + "fade")
-        $(stripe).removeClass(page + "Ele")
-        $(stripe).addClass(page + "Ele")
-        $(stripe).addClass(page + "fade")
 
-        $(seg1).removeClass(page + "fade")
-        $(seg1).removeClass(page + "Ele")
-        $(seg1).addClass(page + "Ele")
-        $(seg1).addClass(page + "fade")
-
-        $(seg2).removeClass(page + "fade")
-        $(seg2).removeClass(page + "Ele")
-        $(seg2).addClass(page + "Ele")
-        $(seg2).addClass(page + "fade")
+            $(stripe).removeClass(page + "fade")
+            $(seg1).removeClass(page + "fade")
+            $(seg2).removeClass(page + "fade")
+        setTimeout(function () {
+            $(stripe).removeClass(page + "Ele")
+            $(seg1).removeClass(page + "Ele")
+            $(seg2).removeClass(page + "Ele")
+    }, 1000);
     }
 
     var pageIn = function (page) {
-        $(stripe).addClass(page + "fade")
+
         $(stripe).addClass(page + "Ele")
-        $(stripe).removeClass(page + "Ele")
-        $(stripe).removeClass(page + "fade")
-
-        $(seg1).addClass(page + "fade")
         $(seg1).addClass(page + "Ele")
-        $(seg1).removeClass(page + "Ele")
-        $(seg1).removeClass(page + "fade")
-
-        $(seg2).addClass(page + "fade")
         $(seg2).addClass(page + "Ele")
-        $(seg2).removeClass(page + "Ele")
-        $(seg2).removeClass(page + "fade")
+        setTimeout (function (){
+        $(stripe).addClass(page + "fade")
+        $(seg1).addClass(page + "fade")
+        $(seg2).addClass(page + "fade")
+        }, 1000);
     }
+
+    $(home).on('click', function () {
+        $(container).removeClass("slideleft");
+        $(pageOut("port"));
+        $(pageOut("about"));
+        $(pageIn("home"));
+    });
 
     $(portfolio).on('click', function () {
         $(container).removeClass("slideleft");
-        $(stripe).removeClass("fadeHome")
-        $(stripe).removeClass("homeEle")
-        $(stripe).addClass("portEle")
-        $(stripe).addClass("fadePort")
+        $(pageOut("home"));
+        $(pageOut("about"));
+        $(pageIn("port"));
     });
 
     $(about).on('click', function () {
         $(container).removeClass("slideleft");
+        if ($(stripe).hasClass("homeEle")) {
+            $(pageIn("about"));
+             $(pageOut("home"));
+        }else{
+        $(pageOut("port"));
+        $(pageIn("about"));}
     });
 
     $(contact).on('click', function () {
         if($(this).hasClass("slideleft")){}else{
-        $(container).addClass("slideleft");}
+            $(container).addClass("slideleft");
+
+            $(seg1).removeClass("homeEle aboutEle");
+            $(seg2).removeClass("homeEle aboutEle");
+        }
     });
-
-    //var removeHome = function () {
-    //    $(stripe).removeClass("add");
-    //    $(seg1).removeClass("add");
-    //    $(seg2).removeClass("add");
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("kill");
-    //        $(seg1).removeClass("kill");
-    //        $(seg2).removeClass("kill");
-    //    }, 1000);
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("homeEle");
-    //        $(seg1).removeClass("homeEle");
-    //        $(seg2).removeClass("homeEle");
-    //    }, 1000);
-    //}
-
-    //var removePortfolio = function () {
-    //    $(stripe).removeClass("add");
-    //    $(seg1).removeClass("add");
-    //    $(seg2).removeClass("add");
-    //    $(stripe).removeClass("kill");
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("portEle");
-    //        $(seg1).removeClass("portEle");
-    //        $(seg2).removeClass("portEle");
-    //    }, 1000);
-    //};
-
-    //var removeAbout = function () {
-    //    $(stripe).removeClass("add");
-    //    $(seg1).removeClass("add");
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("kill");
-    //    }, 1000);
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("aboutEle");
-    //        $(seg1).removeClass("aboutEle");
-    //        $(seg2).removeClass("aboutEle");
-    //    }, 1000);
-    //}
-
-    //var removeContact = function () {
-    //    $(cstripe).addClass("remove");
-    //    $(stripe).removeClass("add");
-    //    $(seg2).removeClass("add");
-    //    $(seg1).removeClass("add");
-
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("kill");
-    //        $(seg1).removeClass("kill");
-    //        $(seg2).removeClass("kill");
-    //    }, 1000);
-    //    setTimeout(function () {
-    //        $(stripe).removeClass("contactEle");
-    //        $(seg1).removeClass("contactEle");
-    //        $(seg2).removeClass("contactEle");
-    //        $(cstripe).addClass("kill");
-    //    }, 1000);
-
-    //}
-    ////HOME
-    //$(home).on('click', function () {
-    //    $(stripe).removeClass("toContact");
-      
-    //    removeAbout();
-    //    removePortfolio();
-    //    removeContact();
-    //    setTimeout(function () {
-    //        $(stripe).addClass("homeEle");
-    //        $(seg2).addClass("homeEle" + " " + "add");
-    //        $(seg1).removeClass("kill");
-    //        $(seg2).removeClass("kill");
-    //    }, 1100);
-        
-        
-    //});
-
-    ////PORTFOLIO
-    //$(portfolio).on('click', function () {
-
-    //    $(stripe).removeClass("toContact");
-    //    $(stripe).addClass("fromContact");
-    //    removeHome();
-    //    removeAbout();
-    //    removeContact();
-
-    //    $(stripe).addClass("portEle");
-    //    $(seg1).addClass("portEle");
-    //    $(seg2).addClass("portEle");
-    //    setTimeout(function () {
-    //        $(stripe).addClass("kill");
-    //        $(seg1).addClass("kill");
-    //        $(seg2).addClass("kill");
-    //    }, 1000);
-    //    setTimeout(function () {
-    //        $(stripe).addClass("add");
-    //        $(seg1).addClass("add");
-    //        $(seg2).addClass("add");
-    //    }, 1100);
-    //});
-    
-    ////ABOUT
-
-    //$(about).on('click', function () {
-
-    //    $(stripe).removeClass("toContact");
-    //    if($(stripe).hasClass("portEle")){
-    //        removePortfolio();}else{}
-    //    removeContact();
-
-    //    setTimeout(function () {
-    //    $(stripe).removeClass("kill");
-    //    $(stripe).addClass("aboutEle");
-    //    $(seg1).addClass("aboutEle");
-    //    $(seg2).addClass("aboutEle");
-    //    setTimeout(function () {
-    //        $(stripe).addClass("kill");
-    //        $(seg2).addClass("kill");
-    //    }, 1000);
-
-    //    setTimeout(function () {
-
-    //        $(stripe).addClass("add");
-    //        $(seg1).addClass("add");
-    //        $(seg2).addClass("add");
-    //    }, 600);
-
-    //    }, 900);
-    //});
-
-    ////CONTACT
-    //$(contact).on('click', function () {
-    //    $(stripe).addClass("toContact");
-    //    removePortfolio();
-    //    removeAbout();
-    //    $(cstripe).removeClass("kill");
-    //    $(stripe).removeClass("kill");
-    //    $(stripe).addClass("contactEle");
-    //    $(seg1).addClass("contactEle");
-    //    $(seg2).addClass("contactEle");
-    //    setTimeout(function () {
-    //        $(stripe).addClass("kill");
-    //        $(seg1).addClass("kill");
-    //        $(seg2).addClass("kill");
-    //    }, 1000);
-        
-    //    setTimeout(function () {
-    //        $(stripe).addClass("add");
-    //        $(seg1).addClass("add");
-    //        $(seg2).addClass("add");
-    //    }, 1100);
-    //    $(cstripe).removeClass("remove");
-    //});
 
 });
