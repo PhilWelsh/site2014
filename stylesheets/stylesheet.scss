@@ -80,21 +80,24 @@
         .box1.orig{display:none;}
         .box1.alt{display:block;}
             .half1{width:70%}.half2{width:30%;}}
-      .aboutfade{ >.text{transform: translateY(-90px);} p{opacity:0;}}
+      .aboutfade >.text{transform: translateY(-90px); p{opacity:0;}}
   
   //CONTACT
  #stripecontainer{transition:$slow;margin-bottom:-440px;}
-         .slideleft{transform:translateX(-105%);}
+         .slideleft{transform:translateX(-105%);
+    .contactstripe .writing .hold{
+    .email ~span{left:0;transition:$fast 1s;}
+    .linkedin ~span{left:0;transition:$fast 1.25s;}
+    .phone ~span{left:0;transition:$fast 1.5s;}
+}
+
+         }
 
 .contactstripe{top:-450px;left:105%;}
 
   .contactEle.seg1, .contactEle.seg2{opacity:0;}
 
-.contactEle ~.contactstripe.infoslide .writing .hold{
-    .email ~span{left:0;transition:$fast 1s;}
-    .linkedin ~span{left:0;transition:$fast 1.25s;}
-    .phone ~span{left:0;transition:$fast 1.5s;}
-}
+
   .card{margin:120px auto;
         border-radius:3px;
         border: 1px solid white;
@@ -202,8 +205,7 @@ p{transition:$slow;}
   .stripe{min-height:100%; min-height:430px; #canvas{height:122px;}}
   .stripe.homeEle{height:430px!important;}
 
-  .stripe.homeEle .canvas{transform:translateX(0%);}
-  .stripe.portEle .canvas{transform:translateX(0%);}
+  .stripe .canvas{transform:translateX(0%);}
   .stripe.aboutEle .canvas{transform:translateX(45%);}
 
   .segment{
@@ -411,7 +413,7 @@ box-shadow: 0 0 8px black;}
              &:after{top: 80px; width: 45px;height:7px;}
                             }
             }
-    .aboutEle.add .section1{
+    .aboutEle .section1{
     .half1{width:60%!important;margin-left:20px;margin-right:20px;}
     .half2 .box1.alt.second{width:210px;position: absolute;right:0;}}
 }
@@ -433,7 +435,7 @@ box-shadow: 0 0 8px black;}
     .box1 h2{font-size:2rem;
                       &:after{top: 60px;}  
      }
-        .aboutEle.add .section1{
+        .aboutEle .section1{
     .half1{width:80%!important;float:none;.text{min-width:85%;margin-right:2%;margin-left:2%;}}
     .half2{float:none;width: 40%;margin: auto;}
     .box1.alt.second{position: initial!important;}}

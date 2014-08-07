@@ -10119,8 +10119,8 @@ using top/right etc. with absolute px, is this ok?!
 
 .aboutfade > .text {
   transform: translateY(-90px); }
-.aboutfade p {
-  opacity: 0; }
+  .aboutfade > .text p {
+    opacity: 0; }
 
 #stripecontainer {
   transition: all 1s ease-in-out;
@@ -10128,6 +10128,15 @@ using top/right etc. with absolute px, is this ok?!
 
 .slideleft {
   transform: translateX(-105%); }
+  .slideleft .contactstripe .writing .hold .email ~ span {
+    left: 0;
+    transition: all 0.5s ease-in-out 1s; }
+  .slideleft .contactstripe .writing .hold .linkedin ~ span {
+    left: 0;
+    transition: all 0.5s ease-in-out 1.25s; }
+  .slideleft .contactstripe .writing .hold .phone ~ span {
+    left: 0;
+    transition: all 0.5s ease-in-out 1.5s; }
 
 .contactstripe {
   top: -450px;
@@ -10135,16 +10144,6 @@ using top/right etc. with absolute px, is this ok?!
 
 .contactEle.seg1, .contactEle.seg2 {
   opacity: 0; }
-
-.contactEle ~ .contactstripe.infoslide .writing .hold .email ~ span {
-  left: 0;
-  transition: all 0.5s ease-in-out 1s; }
-.contactEle ~ .contactstripe.infoslide .writing .hold .linkedin ~ span {
-  left: 0;
-  transition: all 0.5s ease-in-out 1.25s; }
-.contactEle ~ .contactstripe.infoslide .writing .hold .phone ~ span {
-  left: 0;
-  transition: all 0.5s ease-in-out 1.5s; }
 
 .card {
   margin: 120px auto;
@@ -10329,10 +10328,7 @@ body {
 .stripe.homeEle {
   height: 430px !important; }
 
-.stripe.homeEle .canvas {
-  transform: translateX(0%); }
-
-.stripe.portEle .canvas {
+.stripe .canvas {
   transform: translateX(0%); }
 
 .stripe.aboutEle .canvas {
@@ -10571,11 +10567,11 @@ body {
         top: 80px;
         width: 45px;
         height: 7px; }
-  .aboutEle.add .section1 .half1 {
+  .aboutEle .section1 .half1 {
     width: 60% !important;
     margin-left: 20px;
     margin-right: 20px; }
-  .aboutEle.add .section1 .half2 .box1.alt.second {
+  .aboutEle .section1 .half2 .box1.alt.second {
     width: 210px;
     position: absolute;
     right: 0; } }
@@ -10622,18 +10618,18 @@ body {
     font-size: 2rem; }
     .box1 h2:after {
       top: 60px; }
-  .aboutEle.add .section1 .half1 {
+  .aboutEle .section1 .half1 {
     width: 80% !important;
     float: none; }
-    .aboutEle.add .section1 .half1 .text {
+    .aboutEle .section1 .half1 .text {
       min-width: 85%;
       margin-right: 2%;
       margin-left: 2%; }
-  .aboutEle.add .section1 .half2 {
+  .aboutEle .section1 .half2 {
     float: none;
     width: 40%;
     margin: auto; }
-  .aboutEle.add .section1 .box1.alt.second {
+  .aboutEle .section1 .box1.alt.second {
     position: initial !important; } }
 
 @media only screen and (max-width: 525px) {

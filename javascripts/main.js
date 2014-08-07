@@ -215,9 +215,9 @@ $(function () {
     });
 
     $(contact).on('click', function () {
-        if($(this).hasClass("slideleft")){}else{
+        $(stripe).removeClass("portEle");
+        if ($(container).hasClass("slideleft")) {} else {
             $(container).addClass("slideleft");
-
             $(seg1).removeClass("homeEle aboutEle");
             $(seg2).removeClass("homeEle aboutEle");
         }
