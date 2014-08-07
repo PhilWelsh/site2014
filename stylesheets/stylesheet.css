@@ -10250,6 +10250,8 @@ body {
   body h1, body h2, body h3, body h5 {
     font-family: "chomp";
     text-shadow: 0 5px 4px rgba(150, 150, 150, 0.9); }
+  body .stripe h1 {
+    text-shadow: 0px 5px 8px #635e5e; }
   body h4 {
     margin: 5px 0; }
   body h1 {
@@ -10321,7 +10323,8 @@ body {
 
 .stripe {
   min-height: 100%;
-  min-height: 430px; }
+  min-height: 430px;
+  text-shadow: 0px 5px 8px #635e5e; }
   .stripe #canvas {
     height: 122px; }
 
@@ -10609,6 +10612,10 @@ body {
     height: 80px !important; }
   .stripe {
     height: 50%; }
+    .stripe p {
+      margin: 0; }
+  .aboutfade > .text {
+    transform: translateY(-50px); }
   .half1, .half2 {
     width: 100%;
     margin-bottom: 50px; }
