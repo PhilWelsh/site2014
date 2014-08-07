@@ -79,13 +79,6 @@
   .portEle.add.stripe .portexamples{opacity:1;}
   .portEle.add.stripe #canvas{display:none;}
 
-  /*.born
-  .kill
-  .fadein
-  .fadeout*/
-                                   
-
-
   //ABOUT
   .portEle.aboutEle.stripe .text{display:none;}
   .aboutEle.stripe .text{display:block;}
@@ -99,26 +92,12 @@
 
   }
   //CONTACT
-  .toContact.stripe ~.contactstripe{display:none;} .toContact.stripe{display:block;}
-  .slideright.contactstripe{transform:translateX(100%);display:block!important;}
+ #stripecontainer{transition:$slow;margin-bottom:-440px;}
+         .slideleft{transform:translateX(-105%);}
 
-  .aboutEle.stripe{display:block;transform:translateX(-100%);}
-  .aboutEle.stripe.add{display:block;transform:translateX(00%);}
+.contactstripe{top:-450px;left:105%;}
 
-
-  .stripe{transform:translateX(0%);} 
-  .stripe.nomove{transform:translate(0%)!important;}
-  .contactstripe{transform:translateX(100%);}
-  .contactEle.stripe{transform:translateX(-100%);}
-
- 
-  .contactEle.stripe.kill{display:none; ~.contactstripe{display:block;transform:translateX(100%)}}
-  .contactEle.stripe.add ~.contactstripe{transform:translateX(0%);}
-  .contactstripe.remove{transform:translateX(100%);}
-  .contactstripe.kill{transform:translateX(100%);display:none!important;}
   .contactEle.seg1, .contactEle.seg2{opacity:0;}
-
-  .contactstripe.remove{display:block;transform:translateX(100%);}
 
 .contactEle ~.contactstripe.infoslide .writing .hold{
     .email ~span{left:0;transition:$fast 1s;}
@@ -129,10 +108,7 @@
         border-radius:3px;
         border: 1px solid white;
 box-shadow: 0px 9px 19px 5px #323232;
-/*unlikely*/   //     background-color: #86651C;
-/*unlikely*/   //     background-color: #C2BCB1;
-        //background-color: #535461;
-/*unlikely*/        //background-image: -webkit-linear-gradient(top, #535461 15%, #1F2136 100%);
+
         background-image: -webkit-linear-gradient(left bottom, #42434E 0%, #50505E 60%, #2C2C30 90%);
         p,h4,a{margin-top:5px;border:1px solid #f5f5f5;border-left:0;display:block;}
         p{margin:0;padding-left:25px;padding-right:10px;width:190px;
@@ -163,7 +139,7 @@ box-shadow: 0px 9px 19px 5px #323232;
                }
         }
         h4{background-color: rgb(194, 137, 33);padding-left:50px;}
-        .email{background-color: rgb(233, 172, 63);padding-left:75px;}
+        .email{background-color: rgb(233, 172, 63);padding-left:92px;}
         .linkedin{background-color: rgb(233, 198, 131);padding-left:100px;display:block;}
         .phone{background-color: rgb(231, 211, 176);padding-left:125px;}
         
@@ -429,7 +405,7 @@ box-shadow: 0 0 8px black;}
     #home:before{background-image:url(../img/home.png)}
     #about:before{background-image:url(../img/about.png);}
     #portfolio:before{background-image:url(../img/portfolio1.png);}
-    .contact:before{background-image:url(../img/contact.png);}
+    #contact:before{background-image:url(../img/contact.png);}
 }
 
 @media only screen and (max-width: 1460px){.porteg{margin:15px 4%;}}
