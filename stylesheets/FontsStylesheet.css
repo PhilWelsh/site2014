@@ -80,4 +80,48 @@ hr.sexy_line {
   background: black;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff)); }
 
+#iphone {
+  width: 10em;
+  height: 16em;
+  background-color: #000;
+  -webkit-border-radius: 0.8em;
+  -khtml-border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  border-radius: 0.8em;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  #iphone #iphone span {
+    display: block;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f1f1f1; }
+  #iphone .earpiece {
+    width: 16%;
+    height: 3%;
+    margin-top: 10%; }
+  #iphone .screen {
+    width: 80%;
+    height: 65%;
+    margin-top: 10%; }
+  #iphone .home {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 9%;
+    -webkit-border-radius: 1.2em;
+    -moz-border-radius: 1.2em;
+    border-radius: 1.2em; }
+
+.brush {
+  transform: rotate(45deg);
+  border-top-left-radius: 2.5em;
+  border-top-right-radius: 2.5em;
+  border-bottom-right-radius: 1.4em;
+  border-bottom-left-radius: 1.4em;
+  border-bottom: 45px solid black;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 1px solid transparent; }
+
 /*# sourceMappingURL=FontsStylesheet.css.map */

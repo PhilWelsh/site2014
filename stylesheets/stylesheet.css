@@ -9999,6 +9999,169 @@ using top/right etc. with absolute px, is this ok?!
   height: 200px;
   border-radius: 50%; }
 
+.brush {
+  width: 3px;
+  height: 50px;
+  margin: auto;
+  transform: rotate(45deg);
+  border-top-left-radius: 2.5em;
+  border-top-right-radius: 2.5em;
+  border-bottom-right-radius: 1.4em;
+  border-bottom-left-radius: 1.4em;
+  border-bottom: 45px solid black;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 1px solid transparent; }
+
+.brush::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  top: 73px;
+  left: -6px;
+  height: 12px;
+  border-bottom: 14px solid black;
+  border-left: 4px solid transparent;
+  transform: rotatez(4deg);
+  border-right: 4px solid transparent;
+  border-top: 12px solid transparent;
+  /* border-radius: 5px; */
+  border-bottom-right-radius: 12px; }
+
+.brush::after {
+  content: "";
+  position: absolute;
+  transform: rotatez(32deg);
+  width: 3px;
+  top: 101px;
+  left: -7px;
+  background-color: black;
+  height: 0px;
+  border-top: 7px solid black;
+  border-left: 6px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid black;
+  /* border-radius: 5px; */
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 28px; }
+
+.smartphone {
+  background: #fff;
+  width: 35px;
+  margin: 30px auto;
+  height: 50px;
+  border-top: 12px solid black;
+  border-bottom: 12px solid black;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-radius: 10px;
+  position: relative; }
+
+.smartphone:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin-left: -10px;
+  background: inherit;
+  height: 3px;
+  width: 20px;
+  border-radius: 4px; }
+
+.smartphone:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -4px;
+  background: inherit;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; }
+
+.smartpad {
+  background: #fff;
+  width: 50px;
+  margin: 30px auto;
+  height: 70px;
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  border-left: 7px solid black;
+  border-right: 7px solid black;
+  border-radius: 5px;
+  position: relative; }
+
+.smartpad:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -3px;
+  background: inherit;
+  height: 3px;
+  width: 3px;
+  border-radius: 5px; }
+
+.smartpad:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -3px;
+  background: inherit;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%; }
+
+.pc {
+  background: #fff;
+  width: 100px;
+  margin: 30px auto;
+  height: 70px;
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  border-left: 7px solid black;
+  border-right: 7px solid black;
+  position: relative; }
+
+.pc:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 80px;
+  background-color: black;
+  height: 30px;
+  width: 101px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px; }
+
+.pc:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -3px;
+  background: inherit;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%; }
+
+.morebutton:after {
+  content: "";
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 10px solid black;
+  transition: all 0.5s ease-in-out; }
+
 .font-yanone {
   font-family: 'Yanone Kaffeesatz', sans-serif; }
 
@@ -10071,6 +10234,9 @@ using top/right etc. with absolute px, is this ok?!
     height: 80px;
     max-height: 100%;
     min-height: 100%; }
+  .porteg .checkbox:checked ~ .morebutton:after {
+    transform: rotateZ(180deg);
+    transition: all 0.5s ease-in-out; }
   .porteg .morebutton {
     position: absolute;
     background-color: white;
@@ -10358,6 +10524,15 @@ body {
 .seg1, .seg2 {
   min-height: 150%; }
 
+.seg2.homeEle .segment {
+  background-color: #363c57;
+  position: relative; }
+.seg2.homeEle .margin-lr-50 {
+  margin-left: 0;
+  margin-right: 0; }
+.seg2.homeEle .box1.info {
+  border-radius: 0; }
+
 .box1 {
   z-index: 2;
   background: white;
@@ -10574,10 +10749,18 @@ body {
     width: 60% !important;
     margin-left: 20px;
     margin-right: 20px; }
-  .aboutEle .section1 .half2 .box1.alt.second {
-    width: 210px;
-    position: absolute;
-    right: 0; } }
+    .aboutEle .section1 .half1 .text {
+      margin: 0; }
+  .aboutEle .section1 .half2 {
+    float: left; }
+    .aboutEle .section1 .half2 .box1.alt.second {
+      width: 210px;
+      position: relative; }
+    .aboutEle .section1 .half2 .text:after {
+      left: 115px;
+      width: 130px; }
+    .aboutEle .section1 .half2 .text:before {
+      width: 130px; } }
 
 @media only screen and (max-width: 860px) {
   .porteg {
@@ -10614,8 +10797,6 @@ body {
     height: 50%; }
     .stripe p {
       margin: 0; }
-  .aboutfade > .text {
-    transform: translateY(-50px); }
   .half1, .half2 {
     width: 100%;
     margin-bottom: 50px; }
@@ -10626,24 +10807,42 @@ body {
     .box1 h2:after {
       top: 60px; }
   .aboutEle .section1 .half1 {
-    width: 80% !important;
+    width: 92% !important;
     float: none; }
     .aboutEle .section1 .half1 .text {
       min-width: 85%;
       margin-right: 2%;
       margin-left: 2%; }
   .aboutEle .section1 .half2 {
-    float: none;
-    width: 40%;
-    margin: auto; }
+    width: 92% !important;
+    float: none; }
+    .aboutEle .section1 .half2 .text {
+      width: 250px;
+      margin: auto; }
+    .aboutEle .section1 .half2 .effect2:before, .aboutEle .section1 .half2 .effect2:after {
+      width: 130px; }
+    .aboutEle .section1 .half2 .effect2:after {
+      left: 115px; }
   .aboutEle .section1 .box1.alt.second {
     position: initial !important; } }
 
 @media only screen and (max-width: 525px) {
+  .quart {
+    width: 95%; }
+  .vertical.right {
+    display: none; }
+  .contactstripe .card {
+    padding-bottom: 65px;
+    margin: 85px auto;
+    width: 300px; }
+    .contactstripe .card span {
+      display: block; }
   .footer h3, .footer a {
     font-size: 1rem; } }
 
 @media only screen and (max-width: 450px) {
+  .sidemargins {
+    margin: 0; }
   .footer h3 {
     position: relative;
     top: -5px; }
