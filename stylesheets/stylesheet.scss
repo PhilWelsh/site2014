@@ -6,6 +6,14 @@
   @import "DecorStyleSheet";
   //MIXINS
 
+  @mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
   $darkprimary:#c6802e;
   $primary:#d68f00;
   $lightprimary:#fbd66f;
@@ -196,6 +204,38 @@ border-right: 7px solid transparent;
 border-top: 10px solid black;
 transition:$fast;
 }
+
+.circle{
+    margin:auto;
+    position:relative;
+   border-radius: 50%;
+  background-color:transparent;
+  border:4px solid black;
+  height:140px;
+  width:140px;
+}
+
+.circle:after {
+content: "";
+width: 137px;
+transform: rotateZ(-26deg);
+top: 65%;
+left: 9%;
+position: absolute;
+height: 4px;
+background-color: black;
+}
+
+.circle:before {
+content: "";
+width: 137px;
+transform: rotateZ(-26deg);
+top: 37%;
+left: -5%;
+position: absolute;
+height: 4px;
+background-color: black;
+}
    
   //FONTS
 .font-yanone{
@@ -213,7 +253,8 @@ transition:$fast;
   //JS ADDED CLASSES//
   .page{transition:$slow;}
 
-  .seg1{display:none;}
+  .seg1{display:none;
+        border-top: 35px solid white;border-bottom: 35px solid white;.box1{background-color: #F1EDE1;}}
   .seg2{display:none;}
 
   .seg1.homeEle, .seg2.homeEle, .seg1.aboutEle{display:block;}
@@ -267,6 +308,9 @@ transition:$fast;
   //CONTACT
  #stripecontainer{transition:$slow;margin-bottom:-440px;}
          .slideleft{transform:translateX(-105%);
+                    -webkit-transform:translateX(-105%);
+                    -o-transform:translateX(-105%);
+                    -moz-transform:translateX(-105%);
     .contactstripe .writing .hold{
     .email ~span{left:0;transition:$fast 1s;}
     .linkedin ~span{left:0;transition:$fast 1.25s;}
@@ -366,7 +410,7 @@ p{transition:$slow;}
   .background{background-color:$lightestprimary;}
   .topmenu{background-color:$lightestprimary;color:$darkprimary;}
   .stripe{background-color:rgba(255, 171, 1, 0.80); color:$lightestprimary}
-  .segment{background-color:$lightestprimary; color:$primary}
+  .segment{background-color:   #F1EFE5; color:rgb(189, 189, 189);}
   .footer{background-color:rgb(48, 48, 48); color:#e0dfdf;}
 
   .topmenu{
@@ -397,6 +441,7 @@ p{transition:$slow;}
   .segment{
       h2{
           margin:0;
+          text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
           &:after{
             background: $darkprimary;
             background: url(../img/testhr.png);
@@ -409,7 +454,7 @@ p{transition:$slow;}
             border-radius:10px;
             }
         }
-      h4{font-size:1.3rem;}
+      h4{font-size:1.3rem;color:white;text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
       h5{font-size:1.9rem;margin:5px;}
           }
   .seg1,.seg2{min-height:150%;}
@@ -422,7 +467,11 @@ p{transition:$slow;}
 
 .box1 {
     z-index:2;
-   background: white;
+    border: 2px solid rgb(194, 131, 0);
+    /*background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2NkYGAwBuKzQAwC9UA8C4ifQ/n/GaEMkCIfIG6E8iWB9DMgZoQpAOncgmTSfyBbCmQSSAFIEqYTZNIZkE6YSSAGyDi4nUC2CbKb4CphdqK7CaYAbieSb8BuAikASSKblIbsJgCKXBfTNjWx1AAAAABJRU5ErkJggg==
+        );*/
+   background-color: rgb(252, 252, 252);
    padding:20px;
    -moz-border-radius: 5px; 
    -webkit-border-radius: 5px; 

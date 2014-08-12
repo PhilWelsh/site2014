@@ -10162,6 +10162,35 @@ using top/right etc. with absolute px, is this ok?!
   border-top: 10px solid black;
   transition: all 0.5s ease-in-out; }
 
+.circle {
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 4px solid black;
+  height: 140px;
+  width: 140px; }
+
+.circle:after {
+  content: "";
+  width: 137px;
+  transform: rotateZ(-26deg);
+  top: 65%;
+  left: 9%;
+  position: absolute;
+  height: 4px;
+  background-color: black; }
+
+.circle:before {
+  content: "";
+  width: 137px;
+  transform: rotateZ(-26deg);
+  top: 37%;
+  left: -5%;
+  position: absolute;
+  height: 4px;
+  background-color: black; }
+
 .font-yanone {
   font-family: 'Yanone Kaffeesatz', sans-serif; }
 
@@ -10177,7 +10206,11 @@ using top/right etc. with absolute px, is this ok?!
   transition: all 1s ease-in-out; }
 
 .seg1 {
-  display: none; }
+  display: none;
+  border-top: 35px solid white;
+  border-bottom: 35px solid white; }
+  .seg1 .box1 {
+    background-color: #F1EDE1; }
 
 .seg2 {
   display: none; }
@@ -10293,7 +10326,10 @@ using top/right etc. with absolute px, is this ok?!
   margin-bottom: -440px; }
 
 .slideleft {
-  transform: translateX(-105%); }
+  transform: translateX(-105%);
+  -webkit-transform: translateX(-105%);
+  -o-transform: translateX(-105%);
+  -moz-transform: translateX(-105%); }
   .slideleft .contactstripe .writing .hold .email ~ span {
     left: 0;
     transition: all 0.5s ease-in-out 1s; }
@@ -10452,8 +10488,8 @@ body {
   color: #f5f5f5; }
 
 .segment {
-  background-color: #f5f5f5;
-  color: #d68f00; }
+  background-color: #F1EFE5;
+  color: #bdbdbd; }
 
 .footer {
   background-color: #303030;
@@ -10504,7 +10540,8 @@ body {
   transform: translateX(45%); }
 
 .segment h2 {
-  margin: 0; }
+  margin: 0;
+  text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   .segment h2:after {
     background: #c6802e;
     background: url(../img/testhr.png);
@@ -10516,7 +10553,9 @@ body {
     width: 75px;
     border-radius: 10px; }
 .segment h4 {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 .segment h5 {
   font-size: 1.9rem;
   margin: 5px; }
@@ -10535,7 +10574,11 @@ body {
 
 .box1 {
   z-index: 2;
-  background: white;
+  border: 2px solid #c28300;
+  /*background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2NkYGAwBuKzQAwC9UA8C4ifQ/n/GaEMkCIfIG6E8iWB9DMgZoQpAOncgmTSfyBbCmQSSAFIEqYTZNIZkE6YSSAGyDi4nUC2CbKb4CphdqK7CaYAbieSb8BuAikASSKblIbsJgCKXBfTNjWx1AAAAABJRU5ErkJggg==
+        );*/
+  background-color: #fcfcfc;
   padding: 20px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
