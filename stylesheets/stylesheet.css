@@ -10003,6 +10003,10 @@ using top/right etc. with absolute px, is this ok?!
   width: 3px;
   height: 50px;
   margin: auto;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   border-top-left-radius: 2.5em;
   border-top-right-radius: 2.5em;
@@ -10022,6 +10026,10 @@ using top/right etc. with absolute px, is this ok?!
   height: 12px;
   border-bottom: 14px solid black;
   border-left: 4px solid transparent;
+  -moz-transform: rotatez(4deg);
+  -o-transform: rotatez(4deg);
+  -ms-transform: rotatez(4deg);
+  -webkit-transform: rotatez(4deg);
   transform: rotatez(4deg);
   border-right: 4px solid transparent;
   border-top: 12px solid transparent;
@@ -10031,6 +10039,10 @@ using top/right etc. with absolute px, is this ok?!
 .brush::after {
   content: "";
   position: absolute;
+  -moz-transform: rotatez(32deg);
+  -o-transform: rotatez(32deg);
+  -ms-transform: rotatez(32deg);
+  -webkit-transform: rotatez(32deg);
   transform: rotatez(32deg);
   width: 3px;
   top: 101px;
@@ -10167,28 +10179,36 @@ using top/right etc. with absolute px, is this ok?!
   position: relative;
   border-radius: 50%;
   background-color: transparent;
-  border: 4px solid black;
-  height: 140px;
-  width: 140px; }
+  border: 2px solid black;
+  height: 120px;
+  width: 120px; }
 
 .circle:after {
   content: "";
-  width: 137px;
+  width: 116px;
+  -moz-transform: rotateZ(-26deg);
+  -o-transform: rotateZ(-26deg);
+  -ms-transform: rotateZ(-26deg);
+  -webkit-transform: rotateZ(-26deg);
   transform: rotateZ(-26deg);
   top: 65%;
   left: 9%;
   position: absolute;
-  height: 4px;
+  height: 2px;
   background-color: black; }
 
 .circle:before {
   content: "";
-  width: 137px;
+  width: 116px;
+  -moz-transform: rotateZ(-26deg);
+  -o-transform: rotateZ(-26deg);
+  -ms-transform: rotateZ(-26deg);
+  -webkit-transform: rotateZ(-26deg);
   transform: rotateZ(-26deg);
   top: 37%;
   left: -5%;
   position: absolute;
-  height: 4px;
+  height: 2px;
   background-color: black; }
 
 .font-yanone {
@@ -10268,6 +10288,10 @@ using top/right etc. with absolute px, is this ok?!
     max-height: 100%;
     min-height: 100%; }
   .porteg .checkbox:checked ~ .morebutton:after {
+    -moz-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
     transition: all 0.5s ease-in-out; }
   .porteg .morebutton {
@@ -10317,6 +10341,10 @@ using top/right etc. with absolute px, is this ok?!
   width: 30%; }
 
 .aboutfade > .text {
+  -moz-transform: translateY(-90px);
+  -o-transform: translateY(-90px);
+  -ms-transform: translateY(-90px);
+  -webkit-transform: translateY(-90px);
   transform: translateY(-90px); }
   .aboutfade > .text p {
     opacity: 0; }
@@ -10326,10 +10354,11 @@ using top/right etc. with absolute px, is this ok?!
   margin-bottom: -440px; }
 
 .slideleft {
-  transform: translateX(-105%);
-  -webkit-transform: translateX(-105%);
+  -moz-transform: translateX(-105%);
   -o-transform: translateX(-105%);
-  -moz-transform: translateX(-105%); }
+  -ms-transform: translateX(-105%);
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%); }
   .slideleft .contactstripe .writing .hold .email ~ span {
     left: 0;
     transition: all 0.5s ease-in-out 1s; }
@@ -10507,6 +10536,10 @@ body {
   -webkit-transition: all 0.25s ease-in-out; }
 .topmenu .logo img.logo1, .topmenu .logo img.logo2 {
   transition: all 0.75s ease-out;
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg); }
 .topmenu .logo img.logo1 {
   opacity: 1; }
@@ -10514,9 +10547,17 @@ body {
   opacity: 0;
   bottom: 5px; }
 .topmenu .logo:hover img.logo1 {
+  -moz-transform: rotateY(720deg);
+  -o-transform: rotateY(720deg);
+  -ms-transform: rotateY(720deg);
+  -webkit-transform: rotateY(720deg);
   transform: rotateY(720deg);
   opacity: 0; }
 .topmenu .logo:hover img.logo2 {
+  -moz-transform: rotateY(720deg);
+  -o-transform: rotateY(720deg);
+  -ms-transform: rotateY(720deg);
+  -webkit-transform: rotateY(720deg);
   transform: rotateY(720deg);
   opacity: 1; }
 
@@ -10534,9 +10575,17 @@ body {
   height: 430px !important; }
 
 .stripe .canvas {
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
   transform: translateX(0%); }
 
 .stripe.aboutEle .canvas {
+  -moz-transform: translateX(45%);
+  -o-transform: translateX(45%);
+  -ms-transform: translateX(45%);
+  -webkit-transform: translateX(45%);
   transform: translateX(45%); }
 
 .segment h2 {
@@ -10570,7 +10619,8 @@ body {
   margin-left: 0;
   margin-right: 0; }
 .seg2.homeEle .box1.info {
-  border-radius: 0; }
+  border-radius: 0;
+  text-align: center; }
 
 .box1 {
   z-index: 2;
@@ -10602,17 +10652,17 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
   -webkit-box-shadow: 0 15px 10px #777;
   -moz-box-shadow: 0 15px 10px #777;
   box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -o-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg); }
 
 .effect2:after {
-  -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -o-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   right: 10px;
   left: auto; }

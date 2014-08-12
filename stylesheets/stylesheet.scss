@@ -1,6 +1,14 @@
-﻿
+﻿ 
+ $darkprimary:#c6802e;
+  $primary:#d68f00;
+  $lightprimary:#fbd66f;
+  $lightestprimary:#f5f5f5;
+  
+  $slow:all 1s ease-in-out;
+  $mid-speed:all .75s ease-in-out;
+  $fast:all .5s ease-in-out;
+  $faster:all .25s ease-in-out;
 //IMPORTS
-
   @import "HeightStyleSheet";
   @import "OperandsStyleSheet";
   @import "DecorStyleSheet";
@@ -11,23 +19,23 @@
 	     -o-transform: $transforms;
 	    -ms-transform: $transforms;
 	-webkit-transform: $transforms;
-          transform: $transforms;
+         transform: $transforms;
 }
 
-  $darkprimary:#c6802e;
-  $primary:#d68f00;
-  $lightprimary:#fbd66f;
-  $lightestprimary:#f5f5f5;
-  
-  $slow:all 1s ease-in-out;
-  $mid-speed:all .75s ease-in-out;
-  $fast:all .5s ease-in-out;
-  $faster:all .25s ease-in-out;
+@mixin transition($transitions) {
+  -webkit-transition: $transitions;
+  -moz-transition: $transitions;
+  -ms-transition: $transitions;
+  -o-transition: $transitions;
+  transition: $transitions;
+}
+
+
   //MIXINS 
 .brush{
     width:3px;height:50px;
     margin:auto;
-  transform:rotate(45deg);
+ @include transform(rotate(45deg));
 border-top-left-radius:2.5em;
 border-top-right-radius: 2.5em;  
  border-bottom-right-radius: 1.4em; 
@@ -46,7 +54,7 @@ left: -6px;
 height: 12px;
 border-bottom: 14px solid black;
 border-left: 4px solid transparent;
-transform: rotatez(4deg);
+@include transform( rotatez(4deg));
 border-right: 4px solid transparent;
 border-top: 12px solid transparent;
 /* border-radius: 5px; */
@@ -55,7 +63,7 @@ border-bottom-right-radius: 12px;
 .brush::after {
 content: "";
 position: absolute;
-transform: rotatez(32deg);
+@include transform( rotatez(32deg));
 width: 3px;
 top: 101px;
 left: -7px;
@@ -202,7 +210,7 @@ top: 25%;
 border-left: 7px solid transparent;
 border-right: 7px solid transparent;
 border-top: 10px solid black;
-transition:$fast;
+@include transition($fast);
 }
 
 .circle{
@@ -210,30 +218,30 @@ transition:$fast;
     position:relative;
    border-radius: 50%;
   background-color:transparent;
-  border:4px solid black;
-  height:140px;
-  width:140px;
+  border:2px solid black;
+  height:120px;
+  width:120px;
 }
 
 .circle:after {
 content: "";
-width: 137px;
-transform: rotateZ(-26deg);
+width: 116px;
+@include transform( rotateZ(-26deg));
 top: 65%;
 left: 9%;
 position: absolute;
-height: 4px;
+height: 2px;
 background-color: black;
 }
 
 .circle:before {
 content: "";
-width: 137px;
-transform: rotateZ(-26deg);
+width: 116px;
+@include transform( rotateZ(-26deg));
 top: 37%;
 left: -5%;
 position: absolute;
-height: 4px;
+height: 2px;
 background-color: black;
 }
    
@@ -251,7 +259,7 @@ background-color: black;
 
 
   //JS ADDED CLASSES//
-  .page{transition:$slow;}
+  .page{@include transition($slow);}
 
   .seg1{display:none;
         border-top: 35px solid white;border-bottom: 35px solid white;.box1{background-color: #F1EDE1;}}
@@ -270,7 +278,7 @@ background-color: black;
             img{width:300px; height:200px;}
             >a.pic{position:absolute;height:200px;width:100%;top:0;left:0;}  
 
-            .porttext{background-color:#3f4043;overflow:hidden;transition:$slow;
+            .porttext{background-color:#3f4043;overflow:hidden;@include transition($slow);
                       h5{color:rgb(141, 141, 165);font-size:1.1rem; margin:0;padding-right:20px;
                         font-family:Arial;text-transform:capitalize;text-shadow:none;}
                       p{text-align:left;color:rgb(141, 141, 165);font-size:1rem; margin:0;padding-right:20px;
@@ -279,7 +287,7 @@ background-color: black;
 
                      .checkbox{z-index:5;opacity:0;cursor:pointer;}
                     .checkbox:checked ~ div { height:80px; max-height:100%;min-height:100%;}
-                    .checkbox:checked ~ .morebutton:after{transform:rotateZ(180deg);transition:$fast;}
+                    .checkbox:checked ~ .morebutton:after{@include transform(rotateZ(180deg));@include transition($fast);}
                     .morebutton{position: absolute;
                                   background-color:white;
                                 right: 0; bottom: 0; margin:0;
@@ -303,18 +311,15 @@ background-color: black;
         .box1.orig{display:none;}
         .box1.alt{display:block;}
             .half1{width:70%}.half2{width:30%;}}
-      .aboutfade >.text{transform: translateY(-90px); p{opacity:0;}}
+      .aboutfade >.text{@include transform( translateY(-90px)); p{opacity:0;}}
   
   //CONTACT
- #stripecontainer{transition:$slow;margin-bottom:-440px;}
-         .slideleft{transform:translateX(-105%);
-                    -webkit-transform:translateX(-105%);
-                    -o-transform:translateX(-105%);
-                    -moz-transform:translateX(-105%);
+ #stripecontainer{@include transition($slow);margin-bottom:-440px;}
+         .slideleft{@include transform(translateX(-105%));
     .contactstripe .writing .hold{
-    .email ~span{left:0;transition:$fast 1s;}
-    .linkedin ~span{left:0;transition:$fast 1.25s;}
-    .phone ~span{left:0;transition:$fast 1.5s;}
+    .email ~span{left:0;@include transition($fast 1s);}
+    .linkedin ~span{left:0;@include transition($fast 1.25s);}
+    .phone ~span{left:0;@include transition($fast 1.5s);}
 }
 
          }
@@ -353,7 +358,7 @@ box-shadow: 0px 9px 19px 5px #323232;
                         
                 }
                span{padding:0 5px;display:inline;
-                    left:-250px;position:relative; transition:$fast 1s;
+                    left:-250px;position:relative; @include transition($fast 1s);
                     background: rgb(125, 126, 139);color: rgb(228, 228, 228);
                     border: 1px solid gray;
                }
@@ -375,7 +380,7 @@ box-shadow: 0px 9px 19px 5px #323232;
     //JS//
 
   //GENERAL RULES
-p{transition:$slow;}
+p{@include transition($slow);}
 
   .chunk{border-radius:2px;}
   ::selection{color:black; background:gray;}
@@ -400,7 +405,7 @@ p{transition:$slow;}
           text-transform:uppercase;}
 
              a, a:visited, a:hover, a:active{text-decoration: none;color:inherit; cursor:pointer;
-                                             transition:$faster;}
+                                             @include transition($faster);}
 }
  //div{border-bottom:1px solid black;}
    //GENERAL RULES
@@ -417,26 +422,26 @@ p{transition:$slow;}
       li{font-size:1.5rem; margin: 0 20px;}
       a{margin:0;}
      a:not(.logo):hover{text-shadow: 1px 1px 3px $primary;-webkit-filter: hue-rotate(-20deg); }
-     a:before{-webkit-transition:$faster;}
+     a:before{@include transition($faster);}
 
       .logo{
-          img.logo1, img.logo2{transition:all .75s ease-out;transform:rotateZ(0deg);}
+          img.logo1, img.logo2{@include transition(all .75s ease-out);@include transform(rotateZ(0deg));}
             img.logo1{opacity:1;}   img.logo2{opacity:0;bottom:5px;} 
         }
       .logo:hover{
-            img.logo1{transform:rotateY(720deg);opacity:0;}
-          img.logo2{transform:rotateY(720deg);opacity:1;}
+            img.logo1{@include transform(rotateY(720deg));opacity:0;}
+          img.logo2{@include transform(rotateY(720deg));opacity:1;}
          } 
       }
 
-  .canvas{transition:all 8s ease-in-out;}
+  .canvas{@include transition(all 8s ease-in-out);}
   .stripe{min-height:100%; min-height:430px; #canvas{height:122px;}
     text-shadow: 0px 5px 8px rgba(99, 94, 94, 1);
   }
   .stripe.homeEle{height:430px!important;}
 
-  .stripe .canvas{transform:translateX(0%);}
-  .stripe.aboutEle .canvas{transform:translateX(45%);}
+  .stripe .canvas{@include transform(translateX(0%));}
+  .stripe.aboutEle .canvas{@include transform(translateX(45%));}
 
   .segment{
       h2{
@@ -463,7 +468,7 @@ p{transition:$slow;}
 .seg2.homeEle{
     .segment{background-color: rgb(54, 60, 87); position: relative;}
 .margin-lr-50{margin-left:0;margin-right:0;}
-.box1.info{border-radius:0;}} 
+.box1.info{border-radius:0; text-align:center;}} 
 
 .box1 {
     z-index:2;
@@ -498,19 +503,11 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
   -webkit-box-shadow: 0 15px 10px #777;
   -moz-box-shadow: 0 15px 10px #777;
   box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
+ @include transform(rotate(-3deg));
 }
 .effect2:after
 {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
+ @include transform( rotate(3deg));
   right: 10px;
   left: auto;
 }
@@ -552,7 +549,7 @@ box-shadow: 0 0 8px black;}
             li{display:inline;
                padding-left:5px;
                border-left:solid white;
-               transition:$faster;
+               @include transition($faster);
             }
         }
         li:hover{color:$darkprimary;border-color:$darkprimary;}
@@ -648,7 +645,7 @@ box-shadow: 0 0 8px black;}
     .vertical.right.second{display:none;}
     .vertical.right{width:3%;}
 
-    .porteg{margin:15px 5%;transition:$faster;}
+    .porteg{margin:15px 5%;@include transition($faster);}
     .box1{min-width:150px; h2{font-size:3rem;
              &:after{top: 80px; width: 45px;height:7px;}
                             }
@@ -668,7 +665,7 @@ box-shadow: 0 0 8px black;}
          .topmenu li:not(:nth-of-type(3)){position: relative;
 }
         .topmenu{li{margin:0 2%;font-size:1rem;bottom: -70px;left:50px;}
-                 b{opacity:0;transition:$fast;}a:hover b{opacity:1;}
+                 b{opacity:0;@include transition($fast);}a:hover b{opacity:1;}
         a:before{background-size: 70px 70px;width:70px!important;height:70px!important;
                  bottom:0;left:-5px!important;}
         .logoli{position:absolute;left:0;}
