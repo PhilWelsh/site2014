@@ -460,7 +460,7 @@ p{@include transition($slow);}
             }
         }
       h4{font-size:1.3rem;color:white;text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
-      h5{font-size:1.9rem;margin:5px;}
+      h5{font-size:1.9rem;margin:5px;text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
           }
   .seg1,.seg2{min-height:150%;}
       
@@ -581,6 +581,14 @@ box-shadow: 0 0 8px black;}
     box-shadow:0 0 8px black;
   }
 }
+.quart .vertical{
+    display:none;
+@include transform(rotate(90deg));
+position: absolute;
+top:-10px;
+left: 70%;
+}
+
 /*//hoverunderlines
   .hovunder span:before, body .mainmenu span:after {
     width: 20px;
@@ -641,8 +649,11 @@ box-shadow: 0 0 8px black;}
 @media only screen and (max-width: 1330px){.porteg{margin:15px 3%;}}
 @media only screen and (max-width: 1235px){.porteg{margin:15px 7%;}}
 @media only screen and (max-width: 1050px){
-    .quart{padding: 20px 5%;width: 37%;}
+    .quart{padding: 20px 5%;width: 37%;
+           .vertical{display:block;}
+    }
     .vertical.right.second{display:none;}
+
     .vertical.right{width:3%;}
 
     .porteg{margin:15px 5%;@include transition($faster);}
@@ -689,10 +700,10 @@ box-shadow: 0 0 8px black;}
     }
     .box1.alt.second{position: initial!important;}}
 }
-
+.vertical.right.extra{display:none;}
 
 @media only screen and (max-width: 525px){
-    .quart{width: 95%;} .vertical.right{display:none;}
+    .quart{width: 95%; .vertical.right{display:block;}} .vertical.right{display:none;}
     .contactstripe .card{padding-bottom:65px; margin:85px auto; width:300px;span{display:block;}}
 .footer h3, .footer a{font-size:1rem;}
 }

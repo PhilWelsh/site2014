@@ -10172,6 +10172,10 @@ using top/right etc. with absolute px, is this ok?!
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 10px solid black;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
 .circle {
@@ -10223,6 +10227,10 @@ using top/right etc. with absolute px, is this ok?!
   src: url(../font/Seshat.otf) format('opentype'); }
 
 .page {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 
 .seg1 {
@@ -10262,6 +10270,10 @@ using top/right etc. with absolute px, is this ok?!
   .porteg .porttext {
     background-color: #3f4043;
     overflow: hidden;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
     .porteg .porttext h5 {
       color: #8d8da5;
@@ -10293,6 +10305,10 @@ using top/right etc. with absolute px, is this ok?!
     -ms-transform: rotateZ(180deg);
     -webkit-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
   .porteg .morebutton {
     position: absolute;
@@ -10350,6 +10366,10 @@ using top/right etc. with absolute px, is this ok?!
     opacity: 0; }
 
 #stripecontainer {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   margin-bottom: -440px; }
 
@@ -10361,12 +10381,24 @@ using top/right etc. with absolute px, is this ok?!
   transform: translateX(-105%); }
   .slideleft .contactstripe .writing .hold .email ~ span {
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out 1s;
+    -moz-transition: all 0.5s ease-in-out 1s;
+    -ms-transition: all 0.5s ease-in-out 1s;
+    -o-transition: all 0.5s ease-in-out 1s;
     transition: all 0.5s ease-in-out 1s; }
   .slideleft .contactstripe .writing .hold .linkedin ~ span {
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out 1.25s;
+    -moz-transition: all 0.5s ease-in-out 1.25s;
+    -ms-transition: all 0.5s ease-in-out 1.25s;
+    -o-transition: all 0.5s ease-in-out 1.25s;
     transition: all 0.5s ease-in-out 1.25s; }
   .slideleft .contactstripe .writing .hold .phone ~ span {
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out 1.5s;
+    -moz-transition: all 0.5s ease-in-out 1.5s;
+    -ms-transition: all 0.5s ease-in-out 1.5s;
+    -o-transition: all 0.5s ease-in-out 1.5s;
     transition: all 0.5s ease-in-out 1.5s; }
 
 .contactstripe {
@@ -10429,6 +10461,10 @@ using top/right etc. with absolute px, is this ok?!
       display: inline;
       left: -250px;
       position: relative;
+      -webkit-transition: all 0.5s ease-in-out 1s;
+      -moz-transition: all 0.5s ease-in-out 1s;
+      -ms-transition: all 0.5s ease-in-out 1s;
+      -o-transition: all 0.5s ease-in-out 1s;
       transition: all 0.5s ease-in-out 1s;
       background: #7d7e8b;
       color: #e4e4e4;
@@ -10455,6 +10491,10 @@ using top/right etc. with absolute px, is this ok?!
     -webkit-filter: hue-rotate(-155deg) !important; }
 
 p {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 
 .chunk {
@@ -10499,6 +10539,10 @@ body {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; }
 
 .overlay {
@@ -10533,8 +10577,16 @@ body {
   text-shadow: 1px 1px 3px #d68f00;
   -webkit-filter: hue-rotate(-20deg); }
 .topmenu a:before {
-  -webkit-transition: all 0.25s ease-in-out; }
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
 .topmenu .logo img.logo1, .topmenu .logo img.logo2 {
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  -ms-transition: all 0.75s ease-out;
+  -o-transition: all 0.75s ease-out;
   transition: all 0.75s ease-out;
   -moz-transform: rotateZ(0deg);
   -o-transform: rotateZ(0deg);
@@ -10562,6 +10614,10 @@ body {
   opacity: 1; }
 
 .canvas {
+  -webkit-transition: all 8s ease-in-out;
+  -moz-transition: all 8s ease-in-out;
+  -ms-transition: all 8s ease-in-out;
+  -o-transition: all 8s ease-in-out;
   transition: all 8s ease-in-out; }
 
 .stripe {
@@ -10607,7 +10663,8 @@ body {
   text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 .segment h5 {
   font-size: 1.9rem;
-  margin: 5px; }
+  margin: 5px;
+  text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 .seg1, .seg2 {
   min-height: 150%; }
@@ -10716,6 +10773,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
       display: inline;
       padding-left: 5px;
       border-left: solid white;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out; }
   .footer li:hover {
     color: #c6802e;
@@ -10748,6 +10809,17 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
     height: 100%;
     border-radius: 12px/125px;
     box-shadow: 0 0 8px black; }
+
+.quart .vertical {
+  display: none;
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  top: -10px;
+  left: 70%; }
 
 /*//hoverunderlines
   .hovunder span:before, body .mainmenu span:after {
@@ -10823,12 +10895,18 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
   .quart {
     padding: 20px 5%;
     width: 37%; }
+    .quart .vertical {
+      display: block; }
   .vertical.right.second {
     display: none; }
   .vertical.right {
     width: 3%; }
   .porteg {
     margin: 15px 5%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; }
   .box1 {
     min-width: 150px; }
@@ -10871,6 +10949,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
     left: 50px; }
   .topmenu b {
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
   .topmenu a:hover b {
     opacity: 1; }
@@ -10919,9 +11001,14 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
   .aboutEle .section1 .box1.alt.second {
     position: initial !important; } }
 
+.vertical.right.extra {
+  display: none; }
+
 @media only screen and (max-width: 525px) {
   .quart {
     width: 95%; }
+    .quart .vertical.right {
+      display: block; }
   .vertical.right {
     display: none; }
   .contactstripe .card {
