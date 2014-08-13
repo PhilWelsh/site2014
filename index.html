@@ -1,12 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <link href="stylesheets/stylesheet.css" rel="stylesheet" />
-        <link href="font-awesome.css" rel="stylesheet" />
-        <title></title>
-        <meta name="google-site-verification" content="Zs6jqMZ5VsFJwfDpyxAZxclJsAdTNansdNvNWDJL8nc" />
-    </head>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="stylesheets/stylesheet.css" rel="stylesheet" />
+    <!--<link href="font-awesome.css" rel="stylesheet" />-->
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <title></title>
+    <meta name="google-site-verification" content="Zs6jqMZ5VsFJwfDpyxAZxclJsAdTNansdNvNWDJL8nc" />
+</head>
 <body>
     <div class="overlay widthfull height-1000 pos-fix top"></div>
     <div class="bg back-darkgray speckled">
@@ -34,9 +36,9 @@
                         <p>and this is my journey as a web developer</p>
                     </div>
 
-                    <div class="margin-per-3 portexamples page">
-                        <div class="center">
-                            <nav class="porteg">
+                    <div class="portexamples pos-rel page">
+                        <div class="porteg">
+                            <div class="inside pos-rel">
                                 <img src="img/alt.jpg" />
                                 <a class="pic"></a>
                                 <input type="checkbox" class="morebutton checkbox" id="check1">
@@ -45,8 +47,10 @@
                                     <h5>Andrew Robson</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                                 </div>
-                            </nav>
-                            <nav class="porteg">
+                            </div>
+                        </div>
+                        <div class="porteg">
+                            <div class="inside pos-rel">
                                 <img src="img/alt.jpg" />
                                 <a class="pic"></a>
                                 <input type="checkbox" class="morebutton checkbox" id="check2">
@@ -55,18 +59,22 @@
                                     <h5>Laura Ipsum</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                                 </div>
-                            </nav>
-                            <nav class="porteg">
-                                <img src="img/alt.jpg" />
-                                <a class="pic"></a>
-                                <input type="checkbox" class="morebutton checkbox" id="check3">
-                                <a class="morebutton"></a>
-                                <div class="porttext width-300 height-20">
-                                    <h5>Ninjacode</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                            <div class="porteg">
+                                <div class="inside pos-rel">
+                                    <img src="img/alt.jpg" />
+                                    <a class="pic"></a>
+                                    <input type="checkbox" class="morebutton checkbox" id="check3">
+                                    <a class="morebutton"></a>
+                                    <div class="porttext width-300 height-20">
+                                        <h5>Ninjacode</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
                                 </div>
-                            </nav>
-                            <nav class="porteg">
+                            </div>
+                        <div class="porteg">
+                            <div class="inside pos-rel">
                                 <img src="img/alt.jpg" />
                                 <a class="pic"></a>
                                 <input type="checkbox" class="morebutton checkbox" id="check4">
@@ -75,8 +83,10 @@
                                     <h5>Cardboard Sword</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                                 </div>
-                            </nav>
-                        </div>
+                            </div>
+                            </div>
+                        <button type="button" data-role="none" class="slick-prev slick-disabled" style="display: block;">Previous</button>
+                        <button type="button" data-role="none" class="slick-next" style="display: block;">Next</button>
                     </div>
                     <div class="canvas pos-abs bottom widthfull page">
                         <canvas class="floatleft" id="canvas" width="160" height="180"></canvas>
@@ -181,7 +191,7 @@
                         <div class="margin-lr-50 heightfull pos-rel">
                             <div class="box1 info">
                                 <!--<h2>How i can help</h2>-->
-                                
+
                                 <div class="quart">
                                     <h5>
                                         Artistic<br />
@@ -253,5 +263,8 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="javascripts/main.js"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </body>
 </html>
