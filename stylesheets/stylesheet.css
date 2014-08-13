@@ -10241,7 +10241,9 @@ using top/right etc. with absolute px, is this ok?!
     background-color: #F1EDE1; }
 
 .seg2 {
-  display: none; }
+  display: none;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
 
 .seg1.homeEle, .seg2.homeEle, .seg1.aboutEle {
   display: block; }
@@ -10333,6 +10335,12 @@ using top/right etc. with absolute px, is this ok?!
 
 .portEle .portexamples {
   display: block; }
+
+.stripe {
+  border: 2px solid #6F6F6F; }
+
+.stripe.portfade {
+  border: 2px solid #b6b1b1; }
 
 .aboutEle.stripe .text, .aboutEle.stripe #canvas {
   display: block;
@@ -10665,19 +10673,28 @@ body {
   font-size: 1.9rem;
   margin: 5px;
   text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+.segment .quart h5 {
+  color: #EEB960; }
 
 .seg1, .seg2 {
   min-height: 150%; }
 
 .seg2.homeEle .segment {
-  background-color: #363c57;
+  background-color: #5D606E;
   position: relative; }
 .seg2.homeEle .margin-lr-50 {
   margin-left: 0;
   margin-right: 0; }
 .seg2.homeEle .box1.info {
   border-radius: 0;
-  text-align: center; }
+  text-align: center;
+  border-left: 0;
+  border-right: 0; }
+  .seg2.homeEle .box1.info h2:after {
+    display: none; }
+.seg2.homeEle hr {
+  width: 40%;
+  height: 3px; }
 
 .box1 {
   z-index: 2;
@@ -10685,7 +10702,7 @@ body {
   /*background:url(
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2NkYGAwBuKzQAwC9UA8C4ifQ/n/GaEMkCIfIG6E8iWB9DMgZoQpAOncgmTSfyBbCmQSSAFIEqYTZNIZkE6YSSAGyDi4nUC2CbKb4CphdqK7CaYAbieSb8BuAikASSKblIbsJgCKXBfTNjWx1AAAAABJRU5ErkJggg==
         );*/
-  background-color: #fcfcfc;
+  background-color: #f8f8f8;
   padding: 20px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -10786,7 +10803,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
   display: inline-block;
   margin-top: 0px;
   width: 10px;
-  top: -30px;
+  top: -15px;
   position: relative; }
   .vertical .mask {
     overflow: hidden;
@@ -10981,6 +10998,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
     font-size: 2rem; }
     .box1 h2:after {
       top: 60px; }
+  .aboutEle.stripe .text {
+    margin: 50px 0; }
   .aboutEle .section1 .half1 {
     width: 92% !important;
     float: none; }
@@ -11027,7 +11046,13 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
     position: relative;
     top: -5px; }
   ul {
-    margin: 0 5px; } }
+    margin: 0 5px; }
+  .stripe .text {
+    margin: 0 20px; }
+    .stripe .text h1 {
+      font-size: 4rem; }
+    .stripe .text p {
+      font-size: 1rem; } }
 
 @media only screen and (max-width: 400px) {
   .porteg img {
