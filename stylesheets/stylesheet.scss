@@ -276,20 +276,23 @@ background-color: black;
   //margin:15px 1%;
   .porteg{position:relative;display:inline-block;
           .inside{width:300px;}
-            img{width:300px; height:200px;}
+            img{width:300px; height:180px;border:1px solid white;}
             >a.pic{position:absolute;height:200px;width:100%;top:0;left:0;}  
 
-            .porttext{border: 1px solid rgb(182, 182, 182);background-color:#3f4043;overflow:hidden;@include transition($slow);
+            .porttext{border: 1px solid rgb(182, 182, 182);background-color:#3f4043;
+                      overflow:hidden;@include transition($slow);
+                      height: 20px;
                       h5{color:#f5f5f5;font-size:1.1rem; margin:0;padding-right:20px;
                         font-family:Arial;text-transform:capitalize;text-shadow:none;
                         background-color: rgb(84, 87, 95);border-bottom: 1px solid white;
                       }
-                      p{text-align:left;color:rgb(141, 141, 165);font-size:1rem; margin:0;padding:0 20px;
+                      p{text-align:left;color:rgb(141, 141, 165);font-size:1rem; margin:0;
+                        padding-left: 10px; padding-right: 20px; padding-top: 5px;
                         font-family:Arial;text-transform:initial;}
                       }
 
                      .checkbox{z-index:5;opacity:0;cursor:pointer;}
-                    .checkbox:checked ~ div { height:80px; max-height:100%;min-height:100%;}
+                    .checkbox:checked ~ div { height:110px; max-height:100%;min-height:100%;}
                     .checkbox:checked ~ .morebutton:after{@include transform(rotateZ(180deg));@include transition($fast);}
                     .morebutton{position: absolute;
                                   background-color:white;
@@ -738,8 +741,9 @@ margin-left: 7%;
 margin-right: 7%;
 }
     .slick-next{right:-17px!important;}.slick-prev{left:-17px!important;}
-        .porteg{ img{width:200px;height:100px;}
+        .porteg{ img{width:200px;height:120px;}
              .porttext{width:200px;}
+             .checkbox:checked ~ div { height:145px;}
              .inside{width:200px;}
     }
 }

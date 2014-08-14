@@ -10263,7 +10263,8 @@ using top/right etc. with absolute px, is this ok?!
     width: 300px; }
   .porteg img {
     width: 300px;
-    height: 200px; }
+    height: 180px;
+    border: 1px solid white; }
   .porteg > a.pic {
     position: absolute;
     height: 200px;
@@ -10278,7 +10279,8 @@ using top/right etc. with absolute px, is this ok?!
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+    height: 20px; }
     .porteg .porttext h5 {
       color: #f5f5f5;
       font-size: 1.1rem;
@@ -10294,7 +10296,9 @@ using top/right etc. with absolute px, is this ok?!
       color: #8d8da5;
       font-size: 1rem;
       margin: 0;
-      padding: 0 20px;
+      padding-left: 10px;
+      padding-right: 20px;
+      padding-top: 5px;
       font-family: Arial;
       text-transform: initial; }
   .porteg .checkbox {
@@ -10302,7 +10306,7 @@ using top/right etc. with absolute px, is this ok?!
     opacity: 0;
     cursor: pointer; }
   .porteg .checkbox:checked ~ div {
-    height: 80px;
+    height: 110px;
     max-height: 100%;
     min-height: 100%; }
   .porteg .checkbox:checked ~ .morebutton:after {
@@ -11058,9 +11062,11 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
     left: -17px !important; }
   .porteg img {
     width: 200px;
-    height: 100px; }
+    height: 120px; }
   .porteg .porttext {
     width: 200px; }
+  .porteg .checkbox:checked ~ div {
+    height: 145px; }
   .porteg .inside {
     width: 200px; } }
 
