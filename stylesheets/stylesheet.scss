@@ -22,6 +22,7 @@
 .margin{margin:auto;}
 .margin-lr-10{margin-left:10px; margin-right:10px;} .margin-lr-50{margin-left:50px; margin-right:50px;}
 .margin-top-10{margin-top:10px;} .margin-top-40{margin-top:40px;}
+                                 .margin-right-50{margin-right:50px;}
 .margin-topbot-10{margin-top:10px; margin-bottom:10px;} .margin-topbot-20{margin-top:20px; margin-bottom:20px;}
 .pad-top-20{padding-top:20px} .pad-bot-40{padding-bottom:40px;} .pad-topbot-20{padding-top:20px; padding-bottom:20px;}
 .textcenter{text-align:center;}
@@ -355,10 +356,9 @@ background-color: black;
   //ABOUT
   .aboutEle.stripe .text, .aboutEle.stripe #canvas{display:block;opacity:1;}  
 
-  .aboutEle .half2 .effect2:after{right:25px;}
+  /*.aboutEle .half2 .effect2:after{right:25px;}*/
 
   .box1.orig{display:block;}  .box1.alt{display:none;}
-.box1.alt.second{margin-right:20px;}
 
   .picwidth{width:150px;}
   .aboutEle{
@@ -732,7 +732,10 @@ left: -30px!important;
     }
     .half2{float:left; .box1.alt.second{width:210px;position: relative;}
            .text:after{left: 115px;width: 130px;}
-           .text:before{width:130px;}}
+           .text:before{width:130px;}
+    .box1.alt.second img{display:block;}
+
+    }
     }
 }
 //@media only screen and (max-width: 860px){.porteg{margin:15px 2%;}}

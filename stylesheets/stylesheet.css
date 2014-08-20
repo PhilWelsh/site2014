@@ -66,6 +66,9 @@
 .margin-top-40 {
   margin-top: 40px; }
 
+.margin-right-50 {
+  margin-right: 50px; }
+
 .margin-topbot-10 {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -480,17 +483,12 @@
   display: block;
   opacity: 1; }
 
-.aboutEle .half2 .effect2:after {
-  right: 25px; }
-
+/*.aboutEle .half2 .effect2:after{right:25px;}*/
 .box1.orig {
   display: block; }
 
 .box1.alt {
   display: none; }
-
-.box1.alt.second {
-  margin-right: 20px; }
 
 .picwidth {
   width: 150px; }
@@ -1075,7 +1073,9 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2
       left: 115px;
       width: 130px; }
     .aboutEle .section1 .half2 .text:before {
-      width: 130px; } }
+      width: 130px; }
+    .aboutEle .section1 .half2 .box1.alt.second img {
+      display: block; } }
 
 @media only screen and (max-width: 750px) {
   .topmenu {
