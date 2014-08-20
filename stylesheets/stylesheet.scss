@@ -9,9 +9,51 @@
   $fast:all .5s ease-in-out;
   $faster:all .25s ease-in-out;
 //IMPORTS
-  @import "HeightStyleSheet";
+  /*@import "HeightStyleSheet";
   @import "OperandsStyleSheet";
-  @import "DecorStyleSheet";
+  @import "DecorStyleSheet";*/
+
+ .heightfull{height:100%;} .height-50{height:50px;} .height-200{height:200px;} .height-1000{height:1000px;}
+.widthfull{width:100%;} .widthhalf{width:50%;} .width-300{width:300px;} .width-500{width:500px;}
+.pos-fix{position:fixed;} .pos-rel{position:relative;} .pos-abs{position:absolute;}
+.top{top:0;} .bottom{bottom:0;}  .left{left:0;}
+    .back-darkgray{background-color:rgba(80,80,80,1);}
+     .back-white{background-color:white;} 
+.margin-lr-10{margin-left:10px; margin-right:10px;} .margin-lr-50{margin-left:50px; margin-right:50px;}
+.margin-top-10{margin-top:10px;} .margin-top-40{margin-top:40px;}
+.margin-topbot-10{margin-top:10px; margin-bottom:10px;} .margin-topbot-20{margin-top:20px; margin-bottom:20px;}
+.pad-top-20{padding-top:20px} .pad-bot-40{padding-bottom:40px;} .pad-topbot-20{padding-top:20px; padding-bottom:20px;}
+.textcenter{text-align:center;}
+.floatright{float:right;} .floatleft{float:left;}
+.overflow-hide{overflow:hidden;} 
+    .centerdiv {
+        width:auto;
+        text-align: center;
+    
+                    ul {
+                width:auto;
+                padding:0;
+                margin:auto;
+                line-height: 1.4;
+            
+                            li {
+                        display: inline;
+                        text-align: center;
+                    }
+}}
+
+        .clearfix:before,
+        .clearfix:after {
+          content:"";
+          display:table;
+        }
+        .clearfix:after {
+          clear:both;
+        }
+        .clearfix {
+          zoom:1; /* For IE 6/7 (trigger hasLayout) */
+        }
+
   //MIXINS
 
   @mixin transform($transforms) {
@@ -246,16 +288,16 @@ background-color: black;
 }
    
   //FONTS
-.font-yanone{
+/*.font-yanone{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-}
+}*/
 
 @font-face {
-  font-family: chomp;
+  font-family: 28days;
   src:url(../font/28dayslater.ttf)  format('truetype');}
-@font-face {
+/*@font-face {
   font-family: seshat;
-  src:url(../font/Seshat.otf)  format('opentype');}
+  src:url(../font/Seshat.otf)  format('opentype');}*/
 
 
   //JS ADDED CLASSES//
@@ -403,7 +445,7 @@ p{@include transition($slow);}
            text-transform:capitalize;
            font-size:.8em;
         }
-        h1,h2,h3,h5{font-family: "chomp"; text-shadow: 0 5px 4px rgba(150, 150, 150, 0.9);
+        h1,h2,h3,h5{font-family: "28days"; text-shadow: 0 5px 4px rgba(150, 150, 150, 0.9);
         }
         .stripe h1{text-shadow: 0px 5px 8px rgba(99, 94, 94, 1);}
         h4{margin:5px 0;}
@@ -454,7 +496,7 @@ p{@include transition($slow);}
   .segment{
       h2{
           margin:0;
-          text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+          text-shadow: -1px -1px 0 black, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
           &:after{
             background: $darkprimary;
             background: url(../img/testhr.png);
@@ -467,8 +509,8 @@ p{@include transition($slow);}
             border-radius:10px;
             }
         }
-      h4{font-size:1.3rem;color:white;text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
-      h5{font-size:1.9rem;margin:5px;text-shadow: -1px -1px 0 #515363, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+      h4{font-size:1.3rem;color:white;text-shadow: -1px -1px 0 black, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+      h5{font-size:1.9rem;margin:5px;text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
           .quart h5{color: #EEB960;}}
   .seg1,.seg2{min-height:150%;}
       
