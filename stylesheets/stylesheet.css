@@ -52,6 +52,9 @@
 .margin {
   margin: auto; }
 
+.nomargin {
+  margin: 0; }
+
 .margin-lr-10 {
   margin-left: 10px;
   margin-right: 10px; }
@@ -452,7 +455,6 @@
     position: absolute;
     background-color: white;
     right: 0;
-    bottom: 0;
     margin: 0;
     width: 20px;
     height: 20px; }
