@@ -480,11 +480,17 @@
   display: block;
   opacity: 1; }
 
+.aboutEle .half2 .effect2:after {
+  right: 25px; }
+
 .box1.orig {
   display: block; }
 
 .box1.alt {
   display: none; }
+
+.box1.alt.second {
+  margin-right: 20px; }
 
 .picwidth {
   width: 150px; }
