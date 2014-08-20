@@ -49,6 +49,9 @@
 .back-white {
   background-color: white; }
 
+.margin {
+  margin: auto; }
+
 .margin-lr-10 {
   margin-left: 10px;
   margin-right: 10px; }
